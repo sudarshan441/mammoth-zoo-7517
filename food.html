@@ -86,6 +86,91 @@
         background-color: rgb(71, 67, 67);
         color:beige
     }
+    .scroll_img{
+        border:0px solid;
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        height:auto;
+        margin:12px;
+    }
+    .scroll_img>div {
+        border:0px solid;
+        width:22%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .scroll_img>div>p{
+        font-size: 20px;
+    }
+    .scroll_img>div>img{
+        width:100%;
+    }
+
+      /* ******************* explor   **********************/
+
+      .explore{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        padding:40px;
+        margin-bottom: 25px;
+    }
+    .inner{
+        border:0px solid;
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        height:auto;
+        margin:12px;
+        margin-bottom:45px;
+    }
+    .inner>div{
+        border:0px solid;
+        width:22%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        margin:12px
+    }
+    .inner>div:first-child{
+        margin:15px;
+        margin-left: 20px;
+
+    }
+    .inner>div:first-child>button{
+        background-color: rgb(193, 228, 242);
+        font-size: 22px;
+    }
+    .inner>div>img{
+        width:100%;
+    }
+
+    /* 
+    *************** CREATOR CORNER**************** */
+    .corner{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap:70px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .corner>div{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        height:auto;
+        display:grid;
+        grid-template-columns:35% 57%;
+        padding:15px;
+        gap:30px;
+        
+    }
+    .corner>div>div:first-child {
+        display:flex;
+        align-items:center;
+
+    }
+    .corner>div>div>img{
+        width:86%;
+        align-items: center;
+    }
+
     </style>
 </head>
 <body>
@@ -147,6 +232,295 @@
     <p>Sign up to recieve Kickstarter's Happening newsletter,  highlighting new project and buzzworthy stones.</p>
     <input id="subscribe" name="subscribe" placeholder="Enter email address"/>
     <button>Subscribe</button>
+ </div>
+
+ 
+ <h3>FRESH FAVORITE </h3>
+ <div class="scroll_img">
+      <div>
+         <img src="https://ksr-ugc.imgix.net/assets/037/638/626/527e75a6e7844d113c7d1316b5479c32_original.jpeg?ixlib=rb-4.0
+         .2&crop=faces&w=352&h=198&fit=crop&v=1655197839&auto=format&frame=1&q=92&s=6e0d6d6e37fcf167472384ece2fb8b82" alt="img">
+         <h2>Two-tec: A tool that can reduce work time and hassle</h2>
+         <p>The "Two-tech bit" is a tool made with Japanese technology, which was inspired by a 35-
+             year veteran craftsman's thought.</p>
+      </div>
+      <div>
+         <img src="https://ksr-ugc.imgix.net/assets/037/638/626/527e75a6e7844d113c7d1316b5479c32_original.jpeg?ixlib=rb-4.0
+         .2&crop=faces&w=352&h=198&fit=crop&v=1655197839&auto=format&frame=1&q=92&s=6e0d6d6e37fcf167472384ece2fb8b82" alt="img">
+         <h2>Two-tec: A tool that can reduce work time and hassle</h2>
+         <p>The "Two-tech bit" is a tool made with Japanese technology, which was inspired by a 35-
+             year veteran craftsman's thought.</p>
+      </div>
+      <div><img src="https://ksr-ugc.imgix.net/assets/037/638/626/527e75a6e7844d113c7d1316b5479c32_original.jpeg?ixlib=rb-4.0
+         .2&crop=faces&w=352&h=198&fit=crop&v=1655197839&auto=format&frame=1&q=92&s=6e0d6d6e37fcf167472384ece2fb8b82" alt="img">
+         <h2>Two-tec: A tool that can reduce work time and hassle</h2>
+         <p>The "Two-tech bit" is a tool made with Japanese technology, which was inspired by a 35-
+             year veteran craftsman's thought.</p></div>
+      <div><img src="https://ksr-ugc.imgix.net/assets/037/638/626/527e75a6e7844d113c7d1316b5479c32_original.jpeg?ixlib=rb-4.0
+         .2&crop=faces&w=352&h=198&fit=crop&v=1655197839&auto=format&frame=1&q=92&s=6e0d6d6e37fcf167472384ece2fb8b82" alt="img">
+         <h2>Two-tec: A tool that can reduce work time and hassle</h2>
+         <p>The "Two-tech bit" is a tool made with Japanese technology, which was inspired by a 35-
+             year veteran craftsman's thought.</p></div>
+      <!-- <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div> -->
+ </div>
+
+ <h1 style="font-weight:lighter">Explore Food</h1>
+ <div class="explore">
+     <div class="inner">
+         <div>
+             <button>Drink</button><br>
+             <button>Restaurant</button><br>
+             <button>Food Trucks</button><br>
+             <button>Small Batch</button><br>
+             <button>Vegan</button><br>
+             <button>Spaces</button><br>
+             <button>Farmer's Maker</button><br>
+         </div>
+         <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/816/653/b2c66236328fc80cc5ee4b4117146396_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1656627540&auto=format&frame=1&q=92&s=aebe178b7171265bc34f53633cb472ab" alt="img">
+         <h2>Babybird: The EP!</h2>
+         <p>After five years of singing in the Portland Music scene, the time has come to release my own music! Babybird. is my first EP.</p>
+         </div>
+         <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/875/018/a7b6a2a93e68ecefdced24eb97a8e8c7_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657130406&auto=format&frame=1&q=92&s=7596eb3bd7c56c0d4a535e73d01abf64" alt="img">
+         <h2>Chiara Casadei - Non è lo stesso (FIRST ALBUM)/h2>
+         <p>My first project thought big. A journey between love and dreams./p>
+         </div>
+         <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/791/186/466f7c2a31c46e6317477925da1b7969_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656452544&auto=format&frame=1&q=92&s=a05b39a48d0696a53bb1cfd548acf952" alt="img">
+         <h2>LASER makes music</h2>
+         <p>Gay, angry, lo-fi alt rock from Laser, singer/songwriter behind the Doubleclicks & Teaching a Robot to Love. Mountain Goats but trans?</p>
+         </div>
+     </div>
+ </div>
+
+ <h3>TAKING OFF</h3>
+ <div class="scroll_img">
+      <div>
+         <img src="https://ksr-ugc.imgix.net/assets/036/123/809/5e31185aa8eab311bd835a676834246d_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1642711296&auto=format&frame=1&q=92&s=4060b209ac6cf77fbfb7177219914405" alt="img">
+         <h2>Allen Strange's Electronic Music</h2>
+         <p>Reprinting Allen Strange's Electronic Music: Systems, Techniques, and Controls.</p>
+      </div>
+      <div>
+         <img src="https://ksr-ugc.imgix.net/assets/037/804/986/16aad559a975d151a210a92ee650577b_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656550481&auto=format&frame=1&q=92&s=2a106a926e68b329e6d8208a4f35e4af" alt="img">
+         <h2>Daughter of Chopin (Album)</h2>
+         <p>Over two hours of Chopin's most beautiful, difficult, and famous piano music, recorded by a composer-pianist of Polish ancestry.</p>
+      </div>
+      <div><img src="https://ksr-ugc.imgix.net/assets/037/418/479/5caa319b7347e581dd2eb956cf0422b4_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1653407702&auto=format&frame=1&q=92&s=d470c7a6212cb53ae42b7f039936a71b" alt="img">
+         <h2>Cartoon Babylon</h2>
+         <p>An album of new songs by Daniel Carlson</p></div>
+      <div>
+         <img src="https://ksr-ugc.imgix.net/assets/037/791/186/466f7c2a31c46e6317477925da1b7969_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656452544&auto=format&frame=1&q=92&s=a05b39a48d0696a53bb1cfd548acf952" alt="img">
+         <h2>LASER makes music</h2>
+         <p>Gay, angry, lo-fi alt rock from Laser, singer/songwriter behind the Doubleclicks & Teaching a Robot to Love. Mountain Goats but trans?</p>
+     </div>
+      <!-- <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div> -->
+ </div>
+
+ <h1 style="font-weight:lighter">Explore Fashion</h1>
+ <div class="explore">
+     <div class="inner">
+         <div>
+             <button>Accessories</button><br>
+             <button>Apparel</button><br>
+             <button>Jewelry</button><br>
+             <button>footwear</button><br>
+             <button>Pet Fashion</button><br>
+             <button>Childrenwear</button><br>
+             <button>Ready-To-Wear</button><br>
+         </div>
+         <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/816/653/b2c66236328fc80cc5ee4b4117146396_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1656627540&auto=format&frame=1&q=92&s=aebe178b7171265bc34f53633cb472ab" alt="img">
+         <h2>Babybird: The EP!</h2>
+         <p>After five years of singing in the Portland Music scene, the time has come to release my own music! Babybird. is my first EP.</p>
+         </div>
+         <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/875/018/a7b6a2a93e68ecefdced24eb97a8e8c7_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657130406&auto=format&frame=1&q=92&s=7596eb3bd7c56c0d4a535e73d01abf64" alt="img">
+         <h2>Chiara Casadei - Non è lo stesso (FIRST ALBUM)/h2>
+         <p>My first project thought big. A journey between love and dreams./p>
+         </div>
+         <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/791/186/466f7c2a31c46e6317477925da1b7969_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656452544&auto=format&frame=1&q=92&s=a05b39a48d0696a53bb1cfd548acf952" alt="img">
+         <h2>LASER makes music</h2>
+         <p>Gay, angry, lo-fi alt rock from Laser, singer/songwriter behind the Doubleclicks & Teaching a Robot to Love. Mountain Goats but trans?</p>
+         </div>
+     </div>
+ </div>
+
+ <h3>TAKING OFF</h3>
+ <div class="scroll_img">
+      <div>
+         <img src="https://ksr-ugc.imgix.net/assets/036/123/809/5e31185aa8eab311bd835a676834246d_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1642711296&auto=format&frame=1&q=92&s=4060b209ac6cf77fbfb7177219914405" alt="img">
+         <h2>Allen Strange's Electronic Music</h2>
+         <p>Reprinting Allen Strange's Electronic Music: Systems, Techniques, and Controls.</p>
+      </div>
+      <div>
+         <img src="https://ksr-ugc.imgix.net/assets/037/804/986/16aad559a975d151a210a92ee650577b_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656550481&auto=format&frame=1&q=92&s=2a106a926e68b329e6d8208a4f35e4af" alt="img">
+         <h2>Daughter of Chopin (Album)</h2>
+         <p>Over two hours of Chopin's most beautiful, difficult, and famous piano music, recorded by a composer-pianist of Polish ancestry.</p>
+      </div>
+      <div><img src="https://ksr-ugc.imgix.net/assets/037/418/479/5caa319b7347e581dd2eb956cf0422b4_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1653407702&auto=format&frame=1&q=92&s=d470c7a6212cb53ae42b7f039936a71b" alt="img">
+         <h2>Cartoon Babylon</h2>
+         <p>An album of new songs by Daniel Carlson</p></div>
+      <div>
+         <img src="https://ksr-ugc.imgix.net/assets/037/791/186/466f7c2a31c46e6317477925da1b7969_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656452544&auto=format&frame=1&q=92&s=a05b39a48d0696a53bb1cfd548acf952" alt="img">
+         <h2>LASER makes music</h2>
+         <p>Gay, angry, lo-fi alt rock from Laser, singer/songwriter behind the Doubleclicks & Teaching a Robot to Love. Mountain Goats but trans?</p>
+     </div>
+      <!-- <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div> -->
+ </div>
+
+
+ <h1 style="font-weight:lighter">Explore Craft</h1>
+ <div class="explore">
+     <div class="inner">
+         <div>
+             <button>Diy</button><br>
+             <button>Stationary</button><br>
+             <button>Woodworking</button><br>
+             <button>Knitting</button><br>
+             <button>Printing</button><br>
+             
+         </div>
+         <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/816/653/b2c66236328fc80cc5ee4b4117146396_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1656627540&auto=format&frame=1&q=92&s=aebe178b7171265bc34f53633cb472ab" alt="img">
+         <h2>Babybird: The EP!</h2>
+         <p>After five years of singing in the Portland Music scene, the time has come to release my own music! Babybird. is my first EP.</p>
+         </div>
+         <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/875/018/a7b6a2a93e68ecefdced24eb97a8e8c7_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657130406&auto=format&frame=1&q=92&s=7596eb3bd7c56c0d4a535e73d01abf64" alt="img">
+         <h2>Chiara Casadei - Non è lo stesso (FIRST ALBUM)/h2>
+         <p>My first project thought big. A journey between love and dreams./p>
+         </div>
+         <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/791/186/466f7c2a31c46e6317477925da1b7969_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656452544&auto=format&frame=1&q=92&s=a05b39a48d0696a53bb1cfd548acf952" alt="img">
+         <h2>LASER makes music</h2>
+         <p>Gay, angry, lo-fi alt rock from Laser, singer/songwriter behind the Doubleclicks & Teaching a Robot to Love. Mountain Goats but trans?</p>
+         </div>
+     </div>
+ </div>
+
+ <h3>TAKING OFF</h3>
+ <div class="scroll_img">
+      <div>
+         <img src="https://ksr-ugc.imgix.net/assets/036/123/809/5e31185aa8eab311bd835a676834246d_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1642711296&auto=format&frame=1&q=92&s=4060b209ac6cf77fbfb7177219914405" alt="img">
+         <h2>Allen Strange's Electronic Music</h2>
+         <p>Reprinting Allen Strange's Electronic Music: Systems, Techniques, and Controls.</p>
+      </div>
+      <div>
+         <img src="https://ksr-ugc.imgix.net/assets/037/804/986/16aad559a975d151a210a92ee650577b_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656550481&auto=format&frame=1&q=92&s=2a106a926e68b329e6d8208a4f35e4af" alt="img">
+         <h2>Daughter of Chopin (Album)</h2>
+         <p>Over two hours of Chopin's most beautiful, difficult, and famous piano music, recorded by a composer-pianist of Polish ancestry.</p>
+      </div>
+      <div><img src="https://ksr-ugc.imgix.net/assets/037/418/479/5caa319b7347e581dd2eb956cf0422b4_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1653407702&auto=format&frame=1&q=92&s=d470c7a6212cb53ae42b7f039936a71b" alt="img">
+         <h2>Cartoon Babylon</h2>
+         <p>An album of new songs by Daniel Carlson</p></div>
+      <div>
+         <img src="https://ksr-ugc.imgix.net/assets/037/791/186/466f7c2a31c46e6317477925da1b7969_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656452544&auto=format&frame=1&q=92&s=a05b39a48d0696a53bb1cfd548acf952" alt="img">
+         <h2>LASER makes music</h2>
+         <p>Gay, angry, lo-fi alt rock from Laser, singer/songwriter behind the Doubleclicks & Teaching a Robot to Love. Mountain Goats but trans?</p>
+     </div>
+      <!-- <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div> -->
+ </div>
+
+ <h3>CREATOR CORNER</h3>
+ <div class="corner">
+     <div>
+         <div>
+             <img src="https://cdn.filestackcontent.com/resize=width:2000/lwIi1vATWiLyuzcPZQwj" alt="img">
+         </div>
+         <div>
+             <h2>Allen Strange's Electronic Music</h2>
+         <p>Reprinting Allen Strange's Electronic Music: Systems, Techniques, and Controls.</p>
+         </div>
+     </div>
+     <div>
+             <div>
+             <img src="https://cdn.filestackcontent.com/resize=width:800/xjpmJOHiRniEtxGp4GfC" alt="img">
+         </div>
+         <div>
+             <h2>How to tell the story of your creative work</h2>
+         <p>It all comes down to knowing how to harness attention. When you don’t provide enough information </p>
+             </div>
+     </div>
+     <div>
+         <div>
+             <img src="https://cdn.filestackcontent.com/resize=width:800/xjpmJOHiRniEtxGp4GfC" alt="img">
+         </div>
+         <div>
+             <h2>How to tell the story of your creative work</h2>
+         <p>It all comes down to knowing how to harness attention. When you don’t provide enough information </p>
+             </div>
+     </div>
+     <div>
+         <div>
+             <img src="https://cdn.filestackcontent.com/resize=width:800/xjpmJOHiRniEtxGp4GfC" alt="img">
+         </div>
+         <div>
+             <h2>How to tell the story of your creative work</h2>
+         <p>It all comes down to knowing how to harness attention. When you don’t provide enough information </p>
+             </div>
+     </div>
  </div>
 
 </body>
