@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <style>
+
+        
+a,a:hover{
+    text-decoration: none;
+   }
+   .SearchBox{
+    /* border: 1px solid black; */
+    /* width: 10px;
+      height: 62px; */
+    position: relative;
+    left: 1200px;
+   }
+   .searchtext{
+    width: 0%;
+    height: 0%;
+    border: 0px;
+    outline: none;
+    transition: 0.5s;
+    font-size: 30px;
+    
+   }
+   .searchbtn{
+    color: rgb(25, 22, 22);
+    height: 5rem;
+    right: 110px;
+position: fixed;
+top: 13px;
+
+   }
+   .SearchBox:hover>.searchtext{
+      width: 90rem;
+      height: 62px;
+      /* border: 1px solid black; */
+      position: relative;
+      right: 1200px;
+      /* box-shadow: 0 2rem --1.5rem rgba(0, 0, 0,0.5); */
+   }
+ 
+      
+    </style>
+</head>
+<body>
+    <div class="SearchBox">
+        <input type="text" class="searchtext" placeholder="Search for project and categioures">
+        <a href="#" class="searchbtn">
+            <i class="fas fa-search "></i>
+        </a>
+       
+    </div>
+</body>
+</html>
