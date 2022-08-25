@@ -1,63 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Film</title>
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/film.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/film.css" />
 
-    <div id="nav_container">
-
-    </div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div id="nav_container"></div>
 
     <div id="head-section">
-        <h3>Film</h3>
-        <p>Join forces with the intrepid filmmakers and festival creators changing the way stories get told on screen.</p>
-        <a href="#">Explore Film & Video</a>
-
+      <h3>Film</h3>
+      <p>
+        Join forces with the intrepid filmmakers and festival creators changing
+        the way stories get told on screen.
+      </p>
+      <a href="#" class="small-links">Explore Film & Video</a>
     </div>
 
     <div id="featured">
-        <div id="featured-movie">
-            <p class="small-heading">FEATURED PROJECT</p>
-            <img src="https://ksr-ugc.imgix.net/assets/037/876/068/e86b68eacc49f7345ff8cd705689da9e_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657136595&auto=format&frame=1&q=92&s=b7f9f30acf3fb2a01de598ab56d447c8" alt="">
-            <h3>S.T.A.L.K.E.R. | Shadow of the Zone</h3>
-            <p id="desc">A live-action sci-fi short fan-film based on the S.T.A.L.K.E.R. video-game series.</p>
+      <div id="featured-movie">
+        <p class="small-heading">FEATURED PROJECT</p>
+        <img
+          src="https://ksr-ugc.imgix.net/assets/037/876/068/e86b68eacc49f7345ff8cd705689da9e_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657136595&auto=format&frame=1&q=92&s=b7f9f30acf3fb2a01de598ab56d447c8"
+          alt=""
+        />
+        <h3>S.T.A.L.K.E.R. | Shadow of the Zone</h3>
+        <p id="desc">
+          A live-action sci-fi short fan-film based on the S.T.A.L.K.E.R.
+          video-game series.
+        </p>
 
-            <p id="director">By Stephen Hancock</p>
-        </div>
+        <p id="director">By Stephen Hancock</p>
+      </div>
 
-
-        <div id="recommended-movie">
-            <p class="small-heading">RECOMMENDED FOR YOU</p>
-
-        </div>
-
-
+      <div id="recommended-movie">
+        <p class="small-heading">RECOMMENDED FOR YOU</p>
+      </div>
     </div>
-
 
     <div id="subscription-section">
-        <h3>Love film? We do, too.</h3>
-        <p>Sign up to receive Kickstarter’s Film newsletter.</p>
-        <input type="text" placeholder="Enter email address">
-        <button id="subscribe-btn">Subscribe</button>
-
+      <h3>Love film? We do, too.</h3>
+      <p>Sign up to receive Kickstarter’s Film newsletter.</p>
+      <input type="text" placeholder="Enter email address" />
+      <button id="subscribe-btn">Subscribe</button>
     </div>
 
-    
-</body>
+    <div id="shorts">
+      <div class="short-heading">
+        <div>
+          <span class="small-heading">SHORTS</span>
+          <a href="#" class="small-links">Discover more ></a>
+        </div>
+
+        <div>
+          <button class="pre"><</button>
+          <button class="next">></button>
+        </div>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper"></div>
+      </div>
+    </div>
+  </body>
 </html>
 
-<script type="module">
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    import navbar from './components/navbar.js'
-    
-
-    let nav_container=document.getElementById('nav_container')
-    nav_container.innerHTML=navbar();
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4.25,
+    spaceBetween: 30,
+    slidesPerGroup: 2,
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".pre",
+    },
+  });
 </script>
+
+<script type="module">
+  import navbar from "./components/navbar.js";
+
+  let nav_container = document.getElementById("nav_container");
+  nav_container.innerHTML = navbar();
+</script>
+
+<script src="./film.js"></script>

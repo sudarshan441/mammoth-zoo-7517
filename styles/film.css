@@ -1,12 +1,13 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
  
 }
 
 #head-section {
   margin: 60px 0px 36px;
-  padding: 0 120px;
+  padding: 0 60px;
 }
 
 p{
@@ -39,19 +40,19 @@ p:hover{
   padding: 12px 0px 0px;
 }
 
-#head-section > a {
+.small-links {
   color: #4c6cf8;
   font-size: 14px;
   margin: 0 24px 0px 0px;
   font-family: "Maison Neue Book";
 }
 
-#head-section > a:hover {
+.small-links:hover {
   text-decoration: underline;
 }
 
 #featured {
-  padding: 0 120px;
+  padding: 0 60px;
   border-bottom: 0.05px solid rgb(227, 223, 223);
   display: flex;
   padding-bottom: 60px;
@@ -66,6 +67,7 @@ p:hover{
 #featured-movie {
   border-right: 0.05px solid rgb(227, 223, 223);
   padding-right: 3rem;
+  width: 50%;
 }
 
 #featured-movie > img {
@@ -101,9 +103,10 @@ cursor: pointer;
   font-family: "Maison Neue Book", "Helvetica Neue";
   margin-left: 0;
   color: #656969;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
-  margin: 0 0 18px;
+  margin: 0px 15px 18px 0px;
+  
 }
 
 #desc{
@@ -111,6 +114,8 @@ cursor: pointer;
   padding: 12px 0;
   color: #282828;
 }
+
+
 
 #director{
   font-size: 10px;
@@ -186,3 +191,97 @@ cursor: pointer;
 #subscribe-btn:focus {
   opacity: .75;
 }
+
+
+#shorts{
+  padding: 48px 60px;
+  border-bottom: 0.05px solid rgb(227, 223, 223);
+}
+
+
+
+
+.swiper-slide {
+  width: 110%;
+ 
+  margin-right:300px ;
+ 
+}
+.swiper-slide h3 {
+ font-size: 18px;
+margin:10px 0 24px;
+color: #282828;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight:50;
+  
+}
+
+
+.swiper-slide p {
+  font-size: 14px;
+ margin:0px 0 24px;
+ color: #282828;
+   font-family: Georgia, Times, "Times New Roman", serif;
+   font-weight:50;
+   
+ }
+
+
+ .swiper-slide span {
+  font-size: 12px;
+ color: #656969;
+   font-family: Georgia, Times, "Times New Roman", serif;
+   font-weight:50;
+   
+ }
+
+
+.swiper-slide img {
+  width: 108%;
+  border-bottom: 5px solid #037362;
+  
+}
+
+
+.swiper-slide h3:hover {
+  color:#037362 ;
+  text-decoration: underline;
+  cursor: pointer;
+  }
+
+  .swiper-slide p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    }
+
+    .swiper-slide span:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      }
+
+
+.short-heading{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+
+}
+
+.pre,.next{
+  border: none;
+  background-color: transparent;
+  color: #4c6cf8;
+  font-size: 25px;
+  margin-left: 30px;
+  
+}
+
+.pre:hover,.next:hover{
+
+  border: 1px solid blue;
+  border-radius: 100%;
+  
+}
+
+
+
