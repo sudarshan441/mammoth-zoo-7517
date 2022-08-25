@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <style>
             #header{
                 width: 90%;
@@ -15,6 +16,7 @@
                 display:grid;
                 grid-template-columns: repeat(2,1fr);
                 width: 90%;
+                gap: 40px;
                 margin: auto;
             }
 
@@ -40,11 +42,11 @@
 		    z-index: 1;
 		}
 		span:nth-child(1){
-			left: 96%;
+			left: 91%;
 			text-align: right;
 		}
         span:nth-child(2){
-			left: 98%;
+			left: 95%;
 			text-align: right;
 		}
 		section{
@@ -84,10 +86,84 @@
         }
        
         #container>div>img{
-            width:450px;
-            height: 232px;
+            /* width:450px;
+            height: 232px; */
+            width: 100%;
+            height: 394px;
         }
-        
+        #cont{
+            
+        }
+        #cont>div{
+            display: flex;
+            margin-bottom: 30px;
+        }
+        #cont>div>div>img{
+            width: 160px;
+            height: 90px;
+        }
+        #cont>div>div>h4{
+            margin-top: 0px;
+        }
+        #cont>div>div>p{
+            margin-top: -15px;
+        }
+        #cont>div>div:nth-child(2){
+            margin-left: 20px;
+        }
+        #button>button{
+    border: none;
+    color: blue;
+    background-color: white;
+        }
+        #button>button:nth-child(1){
+            margin-left: 85%;
+        }
+        #container2{
+            text-align: center;
+        }
+        #container2>input{
+            padding: 15px;
+            width: 478px;
+            height: 15px;      
+        }
+       
+        #container2>button{
+            padding: 13.5px 18.5px;
+            background-color: #464646;
+            color: white;
+        }
+        #container2>button:hover{
+            background-color:black
+        }
+        #container3{
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        }
+        #container3>div>img{
+            width: 544px;
+            height: 240px;
+        }
+        #childcontainer3{
+            border-left: 6px solid green;
+            padding-left: 10px;
+        }
+        .crousel>div{
+         display: flex;
+       
+        }
+        .crousel>div>a{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        i{
+            margin-left:10px;
+            margin-top: -40px;
+        }
         </style>
     
 </head>
@@ -101,6 +177,9 @@
         <div >
             <h3>FEATURED PROJECT</h3>
             <img src="https://ksr-ugc.imgix.net/assets/037/866/765/a1270ff1a387a877793acf6cebb56479_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1657077328&auto=format&frame=1&q=92&s=3e25a9116d964c6bf4c23ed74b4b5107" alt="">
+            <h1>BIG SWORD: Graves & Groves</h1>
+            <p>A DCC RPG Zine with dense and concise rules to generate unique vampires, survive wilderness hex crawls, play as new classes, and more!</p>
+            <p>By BIG SWORD</p>
         </div>
         <div id="pagination">
             <h3>RECOMMENDED FOR YOU</h3>
@@ -108,23 +187,28 @@
             <div id="button"></div>
         </div>
     </div>
-    <div>
+    <div id="container2">
         <h1>Join our secret society.</h1>
         <h3>Sign up to receive Kickstarter’s Games newsletter.</h3>
         <input type="email" placeholder="Enter email address"> 
         <button>Subscribe</button>
 
     </div>
-    <div>
+    <div id="container3">
         <div><img  src="https://ksr-static.imgix.net/ZineQuest4-2022-2100x900-updated-7294ac3.png?ixlib=rb-4.0.2&s=5cba53b09e01b9a2434e18ef4d5a21fe" alt=""></div>
         <div>
-            <h1><a href="">Welcome to Zine Quest 🐉</a></h1>
-            <p>This month, game developers will delve deep into once-forgotten lore to launch campaigns for Zine Quest. Discover their projects, which are inspired by old-school tabletop RPGs, like early D&D.</p>
+            <div id="childcontainer3"> <h1><a href="">Welcome to Zine Quest 🐉</a></h1>
+                <p>This month, game developers will delve deep into once-forgotten lore to launch campaigns for Zine Quest. Discover their projects, which are inspired by old-school tabletop RPGs, like early D&D.</p></div>
+           
             <a href="">Discover more</a>
         </div>
     </div>
     <div class="crousel">
+            <div><h3>FRESH FAVORITES</h3>
+            <a href="">Discover more ></a></div>
+          
         <main>
+            
             <span>&#139;</span>
             <span>&#155;</span>
             
@@ -132,61 +216,62 @@
                 <div><img src="https://ksr-ugc.imgix.net/assets/038/321/552/623696ece0f1a41a5ff697426395230f_original.jpg?ixlib=rb-4.0.2&w=680&fit=max&v=1660845818&gif-q=50&q=92&s=aec74cf45636b0bb833edc369d91fbde" alt="">
                     <h1>Project Ironside | A $399 Extendable Board Game Table</h1>
                     <p>Not $1999. Just $399. | Fully extendable | Larger play area | Convertible toppers | Accessories from $10 | Modern minimalist design</p></h2>
+                    <p>By 81monkeys</p>
                 </div>
     
-                <div><img src="https://ksr-ugc.imgix.net/assets/038/156/266/6a16b853846eba5c8d07255c89a7edf4_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1659477319&auto=format&frame=1&q=92&s=02b8a9e453315022d72851aedbe9eb37" alt=""><h1>Sea of Legends: Vengeance of the Empires</h1><p>A new expansion for Sea of Legends along with a reprint of the original and expansion.</p></div>
+                <div><img src="https://ksr-ugc.imgix.net/assets/038/156/266/6a16b853846eba5c8d07255c89a7edf4_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1659477319&auto=format&frame=1&q=92&s=02b8a9e453315022d72851aedbe9eb37" alt=""><h1>Sea of Legends: Vengeance of the Empires</h1><p>A new expansion for Sea of Legends along with a reprint of the original and expansion.</p><p>By Krystal Banner</p></div>
     
                 <div><img src="https://ksr-ugc.imgix.net/assets/038/297/628/50fb49cbd5e08c8e05f7ef54e719ea61_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660675440&auto=format&frame=1&q=92&s=b50c06b6435ebfcf7257537df958819b" alt="">
                     <h1>Trailblazers | Outdoor Adventure Game</h1>
-                    <p>A puzzly, portable game of hiking, biking, & kayaking built to survive the great outdoors!</p></h2></div>
+                    <p>A puzzly, portable game of hiking, biking, & kayaking built to survive the great outdoors!</p><p>By Zach Weisman</p></div>
     
                 <div><img src="https://ksr-ugc.imgix.net/assets/038/294/480/21b6a4d4b1115ce03b71c95dbc299c7c_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660659388&auto=format&frame=1&q=92&s=8052a82df06081569ffb14b279ec97e7" alt="">
                     <h1>This Ship Is a Tomb</h1>
-                    <p>A procedurally-generated derelict-crawl for Mothership 1E through a shifting, transdimensional vessel.</p></div>
+                    <p>A procedurally-generated derelict-crawl for Mothership 1E through a shifting, transdimensional vessel.</p><p>By Cowrie Games</p></div>
                     
                     <div><img src="https://ksr-ugc.imgix.net/assets/038/281/438/9af611c43fb3e705b590bbcc73bdfe58_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660572282&auto=format&frame=1&q=92&s=3a6b275e03a7d51bc655914870e79ff7" alt="">
                         <h1>Sebastian Crowe's Guide to Drakkenheim</h1>
-                        <p>A players guide and sourcebook which includes brand new 5e subclasses and takes you through the world of Drakkenheim!</p></h2>
+                        <p>A players guide and sourcebook which includes brand new 5e subclasses and takes you through the world of Drakkenheim!</p><p>By Dan Blacklock of Cloud Puncher Games</p></h2>
                     </div>
         
-                    <div><img src="https://ksr-ugc.imgix.net/assets/038/021/590/494794ef06dd27272e0f7b2b8cdd8b50_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658350189&auto=format&frame=1&q=92&s=a69a53678ad4a4768c2f80f91f7508d9" alt=""><h1>Halls of Hegra</h1><p>From an abandoned fortress you command a group of Norwegian volunteers fighting numerically superior German forces at the start of WW2.</p></div>
+                    <div><img src="https://ksr-ugc.imgix.net/assets/038/021/590/494794ef06dd27272e0f7b2b8cdd8b50_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658350189&auto=format&frame=1&q=92&s=a69a53678ad4a4768c2f80f91f7508d9" alt=""><h1>Halls of Hegra</h1><p>From an abandoned fortress you command a group of Norwegian volunteers fighting numerically superior German forces at the start of WW2.</p><p>By Triple Topping</p></div>
         
                     <div><img src="https://ksr-ugc.imgix.net/assets/038/213/416/ae3a12a5bd5ed617fab272f225252a6a_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659987275&auto=format&frame=1&q=92&s=af080988e336eccd3d0e9776013c39c5" alt="">
                         <h1>Doomensions: Pop-Up Mystery Manor</h1>
-                        <p>Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company</p></h2></div>
+                        <p>Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company</p><p>By Jackdaw Co</p></div>
         
                     <div><img src="https://ksr-ugc.imgix.net/assets/038/311/225/e9d5ef78530778b46578b6c01ec2817f_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660766465&auto=format&frame=1&q=92&s=69972284089716818088f1ce930f0007" alt="">
                         <h1>NANOLITH - Cyberpunk RPG Board Game</h1>
-                        <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p></div>
+                        <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p><p>By Jim</p></div>
                         <div><img src="https://ksr-ugc.imgix.net/assets/038/321/552/623696ece0f1a41a5ff697426395230f_original.jpg?ixlib=rb-4.0.2&w=680&fit=max&v=1660845818&gif-q=50&q=92&s=aec74cf45636b0bb833edc369d91fbde" alt="">
                             <h1>Project Ironside | A $399 Extendable Board Game Table</h1>
-                            <p>Not $1999. Just $399. | Fully extendable | Larger play area | Convertible toppers | Accessories from $10 | Modern minimalist design</p></h2>
+                            <p>Not $1999. Just $399. | Fully extendable | Larger play area | Convertible toppers | Accessories from $10 | Modern minimalist design</p><p>By Edaureen Muhamad Nor</p></h2>
                         </div>
             
-                        <div><img src="https://ksr-ugc.imgix.net/assets/038/156/266/6a16b853846eba5c8d07255c89a7edf4_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1659477319&auto=format&frame=1&q=92&s=02b8a9e453315022d72851aedbe9eb37" alt=""><h1>Sea of Legends: Vengeance of the Empires</h1><p>A new expansion for Sea of Legends along with a reprint of the original and expansion.</p></div>
+                        <div><img src="https://ksr-ugc.imgix.net/assets/038/156/266/6a16b853846eba5c8d07255c89a7edf4_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1659477319&auto=format&frame=1&q=92&s=02b8a9e453315022d72851aedbe9eb37" alt=""><h1>Sea of Legends: Vengeance of the Empires</h1><p>A new expansion for Sea of Legends along with a reprint of the original and expansion.</p><p>By Long Tail Games (Ash)</p></div>
             
                         <div><img src="https://ksr-ugc.imgix.net/assets/038/297/628/50fb49cbd5e08c8e05f7ef54e719ea61_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660675440&auto=format&frame=1&q=92&s=b50c06b6435ebfcf7257537df958819b" alt="">
                             <h1>Trailblazers | Outdoor Adventure Game</h1>
-                            <p>A puzzly, portable game of hiking, biking, & kayaking built to survive the great outdoors!</p></h2></div>
+                            <p>A puzzly, portable game of hiking, biking, & kayaking built to survive the great outdoors!</p><p>By James Hanna</p></div>
             
                         <div><img src="https://ksr-ugc.imgix.net/assets/038/294/480/21b6a4d4b1115ce03b71c95dbc299c7c_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660659388&auto=format&frame=1&q=92&s=8052a82df06081569ffb14b279ec97e7" alt="">
                             <h1>This Ship Is a Tomb</h1>
-                            <p>A procedurally-generated derelict-crawl for Mothership 1E through a shifting, transdimensional vessel.</p></div>
+                            <p>A procedurally-generated derelict-crawl for Mothership 1E through a shifting, transdimensional vessel.</p><p>By Nick Murray of Bitewing Games</p></div>
                             
                             <div><img src="https://ksr-ugc.imgix.net/assets/038/281/438/9af611c43fb3e705b590bbcc73bdfe58_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660572282&auto=format&frame=1&q=92&s=3a6b275e03a7d51bc655914870e79ff7" alt="">
                                 <h1>Sebastian Crowe's Guide to Drakkenheim</h1>
-                                <p>A players guide and sourcebook which includes brand new 5e subclasses and takes you through the world of Drakkenheim!</p></h2>
+                                <p>A players guide and sourcebook which includes brand new 5e subclasses and takes you through the world of Drakkenheim!</p><p>By Dungeon Dudes</p></h2>
                             </div>
                 
-                            <div><img src="https://ksr-ugc.imgix.net/assets/038/021/590/494794ef06dd27272e0f7b2b8cdd8b50_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658350189&auto=format&frame=1&q=92&s=a69a53678ad4a4768c2f80f91f7508d9" alt=""><h1>Halls of Hegra</h1><p>From an abandoned fortress you command a group of Norwegian volunteers fighting numerically superior German forces at the start of WW2.</p></div>
+                            <div><img src="https://ksr-ugc.imgix.net/assets/038/021/590/494794ef06dd27272e0f7b2b8cdd8b50_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658350189&auto=format&frame=1&q=92&s=a69a53678ad4a4768c2f80f91f7508d9" alt=""><h1>Halls of Hegra</h1><p>From an abandoned fortress you command a group of Norwegian volunteers fighting numerically superior German forces at the start of WW2.</p><p>By Woodpecker Games</p></div>
                 
                             <div><img src="https://ksr-ugc.imgix.net/assets/038/213/416/ae3a12a5bd5ed617fab272f225252a6a_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659987275&auto=format&frame=1&q=92&s=af080988e336eccd3d0e9776013c39c5" alt="">
                                 <h1>Doomensions: Pop-Up Mystery Manor</h1>
-                                <p>Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company</p></h2></div>
+                                <p>Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company</p><p>By Woodpecker Games</p></div>
                 
                             <div><img src="https://ksr-ugc.imgix.net/assets/038/311/225/e9d5ef78530778b46578b6c01ec2817f_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660766465&auto=format&frame=1&q=92&s=69972284089716818088f1ce930f0007" alt="">
                                 <h1>NANOLITH - Cyberpunk RPG Board Game</h1>
-                                <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p></div>
+                          <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p><p>By Wraithmarked Creative</p></div>
             </section>
         </main>
     </div>
