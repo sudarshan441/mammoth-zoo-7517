@@ -75,7 +75,14 @@ let arr=[{
       percent.innerText=data[i].percent;
       let by=document.createElement("p");
       by.innerText=data[i].by;
-      div2.append(title,percent,by)
+      let save=document.createElement("i");
+      save.setAttribute("class","fa-solid fa-bookmark") 
+      
+      let like=document.createElement("i");
+      like.setAttribute("class","fa-solid fa-thumbs-up")
+      let dislike=document.createElement("i");
+      dislike.setAttribute("class","fa-solid fa-thumbs-down")
+      div2.append(title,percent,by,save,like,dislike)
       div.append(div1,div2)
       document.getElementById("cont").append(div);
 
