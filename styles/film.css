@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+#head-section {
+  margin: 60px 0px 36px;
+  padding: 0 120px;
+}
+
+p{
+  margin: 0;
+  color: #282828;
+}
+
+h3{
+  margin: 0;
+}
+
+p:hover{
+  color: #282828;
+}
+
+#head-section > h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0;
+  color: #282828;
+}
+
+#head-section > p {
+  font-family: "Times New Roman";
+  margin-left: 0;
+  font-size: 16px;
+  color: #656969;
+  margin: 0px 0px 18px;
+  padding: 12px 0px 0px;
+}
+
+#head-section > a {
+  color: #4c6cf8;
+  font-size: 14px;
+  margin: 0 24px 0px 0px;
+  font-family: "Maison Neue Book";
+}
+
+#head-section > a:hover {
+  text-decoration: underline;
+}
+
+#featured {
+  padding: 0 120px;
+  border-bottom: 0.05px solid rgb(227, 223, 223);
+  display: flex;
+  padding-bottom: 60px;
+  margin-top: 100px;
+}
+
+#featured > div {
+  /* border: 1px solid red; */
+  text-align: left;
+  margin-left: 0;
+}
+#featured-movie {
+  border-right: 0.05px solid rgb(227, 223, 223);
+  padding-right: 3rem;
+}
+
+#featured-movie > img {
+  width: 100%;
+  border-bottom: 15px solid #037362;
+  border-bottom-style: groove;
+}
+
+#featured-movie > h3 {
+  color: #282828;
+  font-size: 20px;
+  margin: 0;
+  font-weight: lighter;
+  font-family: "Maison Neue Book";
+}
+
+#featured-movie > h3:hover {
+color:#037362 ;
+text-decoration: underline;
+cursor: pointer;
+}
+
+
+
+
+
+#recommended-movie {
+  padding-left: 3rem;
+  text-decoration: none;
+}
+
+.small-heading {
+  font-family: "Maison Neue Book", "Helvetica Neue";
+  margin-left: 0;
+  color: #656969;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+#desc{
+  font-size: 14px;
+  padding: 12px 0;
+  color: #282828;
+}
+
+#director{
+  font-size: 10px;
+  color: #656969;
+
+}
+
+#subscription-section{
+  border-bottom: 0.05px solid rgb(227, 223, 223);
+  text-align: center;
+  margin: auto;
+  padding: 48px;
+
+}
+
+#subscription-section>h3{
+  font-size: 28px;
+  color: #282828;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight:50;
+
+}
+
+#subscription-section>p{
+  font-size: 18px;
+  margin: 24px 0px;
+  color: #282828;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+#subscription-section>input{
+  color: #282828;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  padding: 12px;
+  width: 300px;
+  height: 10px;
+  background-color: #FFFFFF;
+  border-width:0.5px ;
+}
+
+
+
+
+/* CSS */
+#subscribe-btn {
+  background-color: #222;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height:30px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+}
+
+#subscribe-btn:hover,
+#subscribe-btn:focus {
+  opacity: .75;
+}

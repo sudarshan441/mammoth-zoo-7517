@@ -1,0 +1,380 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<link rel="stylesheet" href="./Style/navbar.css">
+
+
+
+<body>
+     <div id="nav_container"></div>
+<!-- 
+     <div id="bodyi">
+  <img id="bodyimg" src="https://ksr-static.imgix.net/c51lnrg9-doodle_continue.png?ixlib=rb-2.1.0&auto=compress%2Cformat&w=1000&fit=min&s=dc34091fa7d24f5d676e0e0201337f9b" alt="" srcset="">
+  <img id="bodyimg1" src="https://ksr-static.imgix.net/c51lnrg9-doodle_continue.png?ixlib=rb-2.1.0&auto=compress%2Cformat&w=1000&fit=min&s=dc34091fa7d24f5d676e0e0201337f9b" alt="" srcset="">
+     </div> -->
+     
+<div id="Home1">
+       <p id="Bring">Bring a creative project to life.</p>
+        <p id="On">ON KICKSTARTER:</p>
+    
+        <div id="digit">
+          <div id="digit1">
+             <p>225,519</p>
+             <p id="project">project funded</p>
+          </div>
+          <div  id="digit2">
+             <p>$6,214,065,028</p>
+             <p id="project">towards creative work</p>
+          </div>
+          <div  id="digit3">
+           <p>69,393,280</p>
+           <p id="project">pledges</p>
+          </div>
+        </div>
+
+</div>
+
+<style>
+      #Home2{
+          width: 90%;
+           height: 100%;
+          border: 1px solid black;
+          margin: auto;
+          margin-top: 50px;
+          display: flex;
+          border-left: 0px;
+          border-top: 0px;
+          border-right: 0px;
+          border-bottom: #dcdeddFF;
+      }
+
+      /* home 2 1st img */
+      #home2-1{
+        /* border: 1px solid black; */
+        width: 52%;
+        height: 100%;
+        border-right: 1px solid #dcdeddFF;
+      }
+      #feature{
+      position: relative;
+      top: 5px;
+      right: 10px;
+      
+      }
+
+      #boneimg{
+        /* border: 1px solid black; */
+        width: 93%;
+        height: 65%;
+        margin-top: 30px;
+        background-color:#037362FF;
+      }
+      #boneimg>img{
+        width: 100%;
+        height: 95%;
+       
+        
+      }
+      #bone{
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: -4px;
+      }
+      #solve{
+        font-size: 18px;
+        margin-left: -4px;
+        margin-bottom: 30px;
+      }
+      #by{
+        font-size: 12px;
+        margin-left: -4px;
+      }
+
+      /* 1st pagination */
+       
+      #recom{
+      position: relative;
+      top: 5px;
+      left: 50px;
+      
+      }
+      
+  
+</style>
+
+<div id="Home2">
+   <div id="home2-1">
+    <p id="feature">FEATURED PROJECT</p>
+
+    <div id="boneimg">
+      <img src="https://ksr-ugc.imgix.net/assets/038/287/462/6bdb158955fb45e06cb334649c8703e4_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1660608792&auto=format&frame=1&q=92&s=d241410b97938ba121d9678e52c47452" alt="">
+    </div>
+
+    <p id="bone">Bone Bout</p>
+    <p id="solve">Solve mysteries in this tabletop role-playing game inspired by classic boxing video games</p>
+   <p id="by">By NeonRot</p>
+  </div>
+
+  <div id="home2-2">
+      <p id="recom">RECOMMENDED FOR YOU</p>
+
+
+  </div>
+
+</div>
+
+</body>
+</html>
+
+<script type="module">
+
+    import navbar from './Components/navbar.js'
+    console.log(navbar)
+
+    let nav_container=document.getElementById('nav_container')
+    nav_container.innerHTML=navbar();
+</script>
+
+
+<!-- @font-face { 
+    font-family:"Maison Neue Book";
+   
+    src:url("https://d207bzo2lz83l1.cloudfront.net/MaisonNeueWEB-Book.woff2") format("woff2"),url("https://d207bzo2lz83l1.cloudfront.net/MaisonNeueWEB-Book.woff") format("woff");
+  } 
+  @media screen, print{ 
+    section { 
+      margin:  0; 
+      padding:  0; 
+      border:  0; 
+      font-family:  "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+      
+      vertical-align:  baseline;
+      display: block;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .flex { 
+      display: -webkit-box; 
+      display: -webkit-flex; 
+      display: -moz-flex; 
+      display: -ms-flexbox; 
+      display: flex;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .order2 { 
+      -webkit-box-ordinal-group: 21; 
+      -webkit-order: 2; 
+      -moz-order: 2; 
+      -ms-flex-order: 2; 
+      order: 2;
+    } 
+  }     
+  
+  @media (min-width: 795px){ 
+    .order1-md { 
+      -webkit-box-ordinal-group: 11; 
+      -webkit-order: 1; 
+      -moz-order: 1; 
+      -ms-flex-order: 1; 
+      order: 1;
+    } 
+  }     
+  
+  @media (min-width: 795px){ 
+    .grow1-md { 
+      -webkit-box-flex: 1; 
+      -webkit-flex-grow: 1; 
+      -moz-flex-grow: 1; 
+      -ms-flex-positive: 1; 
+      flex-grow: 1;
+    } 
+  }     
+  
+  @media (min-width: 795px){ 
+    .basis50p-md { 
+      -webkit-flex-basis: 50%; 
+      -moz-flex-basis: 50%; 
+      -ms-flex-preferred-size: 50%; 
+      flex-basis: 50%;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .pl3 { 
+      padding-left: 1.8rem;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .py2 { 
+      padding-top: 1.2rem !important; 
+      padding-bottom: 1.2rem !important;
+    } 
+  }     
+  
+  @media (min-width: 795px){ 
+    .pl4-md { 
+      padding-left: 2.4rem;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .border-bottom { 
+      border-bottom: 0.1rem solid #DCDEDD;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .border-grey-400 { 
+      border-color: #E8E8E8;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .bg-white { 
+      background-color: #FFFFFF;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .flex-wrap { 
+      -webkit-flex-wrap: wrap; 
+      -moz-flex-wrap: wrap; 
+      -ms-flex-wrap: wrap; 
+      flex-wrap: wrap;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .justify-between { 
+      -webkit-box-pack: justify; 
+      -ms-flex-pack: justify; 
+      -webkit-justify-content: space-between; 
+      -moz-justify-content: space-between; 
+      justify-content: space-between;
+    } 
+  }     
+  
+  @media (min-width: 795px){ 
+    .flex-nowrap-md { 
+      -webkit-flex-wrap: nowrap; 
+      -moz-flex-wrap: nowrap; 
+      -ms-flex-wrap: none; 
+      flex-wrap: nowrap;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .w100p { 
+      width: 100%;
+    } 
+  }     
+  
+  @media screen, print{ 
+    div { 
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+      font-size: inherit; 
+      font-weight: inherit; 
+      vertical-align: baseline;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .relative { 
+      position: relative;
+    } 
+  }     
+  
+  @media screen, print{ 
+    body { 
+      margin:  0; 
+      padding:  0; 
+      border:  0; 
+      font-family:  "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+      font-size:  1.4rem; 
+      font-weight:  inherit; 
+      vertical-align:  baseline;
+      line-height: 1.5; 
+      color: #282828; 
+      -webkit-font-smoothing: antialiased; 
+      -moz-osx-font-smoothing: grayscale;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .maison-book { 
+      font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    } 
+  }     
+  
+  @media screen, print{ 
+    html { 
+      margin:   0; 
+      padding:   0; 
+      border:   0; 
+      font-family:  "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif; 
+      font-size:  62.5%; 
+      font-weight:  400;
+      vertical-align:   baseline;
+      line-height:  1;
+    } 
+  }     
+  
+  @media screen, print{ 
+    button { 
+      background-color:   transparent;
+      cursor:  pointer; 
+      padding:  0;
+      border: 0; 
+      font-family: inherit;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .type-14 { 
+      font-size: 1.4rem; 
+      line-height: 2.4rem;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .soft-black { 
+      color: #282828;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .items-center { 
+      -webkit-box-align: center; 
+      -ms-flex-align: center; 
+      -webkit-align-items: center; 
+      -moz-align-items: center; 
+      align-items: center;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .mr2 { 
+      margin-right: 1.2rem;
+    } 
+  }     
+  
+  @media screen, print{ 
+    .hover-ksr-green-700:hover { 
+      color: #037362;
+    } 
+  }     
+  
+  
+   -->
