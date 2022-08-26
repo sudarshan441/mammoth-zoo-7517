@@ -1,0 +1,339 @@
+#Arts {
+    width: 90%;
+    margin: auto;
+    /* margin-top: 12%; */
+}
+
+.front>p {
+    display: block;
+    font-family: "Cooper Light", Georgia, Times, "Times New Roman", serif;
+    color: #656969;
+}
+
+.front>h1 {
+    color: #282828;
+}
+
+.front>li {
+    display: flex;
+    margin-left: -3%;
+    text-decoration: none;
+    color: #4C6CF8;
+}
+
+.mid>img {
+    width: 40%;
+}
+
+#subscribe {
+    width: 100%;
+    height: 220px;
+    margin-top: 110px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#subscribe input {
+    border-radius: 0;
+    width: 30%;
+    height: 200%;
+    line-height: 1.8rem;
+    padding: 1.2rem;
+    border: 0.1rem solid #E8E8E8;
+    transition: all 300ms cubic-bezier(0.175, 0.885, 0.335, 1);
+    -webkit-appearance: none;
+    background: #FFFFFF;
+    /* display: block; */
+    box-sizing: border-box;
+    resize: none;
+    margin: auto;
+}
+
+.explore {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 40px;
+    margin-bottom: 25px;
+}
+
+.inner {
+    border: 0px solid;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 12px;
+    margin-bottom: 45px;
+}
+
+.inner>div {
+    border: 0px solid;
+    width: 22%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: 12px
+}
+
+.inner>div:first-child {
+    margin: 15px;
+    margin-left: 20px;
+}
+
+.inner>div>p+p {
+    color: #656969;
+}
+
+.inner>div:first-child>button {
+    background-color: #DBE7FF;
+    color: #464646;
+    font-size: 22px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-top: 10px;
+}
+
+.inner>div>img {
+    width: 100%;
+}
+
+.para {
+    width: 100%;
+    margin: auto;
+    margin-top: 70px;
+    text-decoration: none;
+    color: #656969;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.crauser1 {
+    padding-top: 80px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.crauser1>div>h3 {
+    /* background-color: red; */
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #282828;
+}
+
+.crauser1>div>h3+p {
+    font-family: "Cooper Light", Georgia, Times, "Times New Roman", serif;
+    /* text-decoration: underline; */
+    color: #282828;
+}
+
+.crauser1>div>h3:hover {
+    text-decoration: underline;
+    color: rgb(9, 140, 120);
+    border-color: rgb(9, 140, 120);
+}
+
+.crauser1>div>p+p {
+    /* background-color: yellow; */
+    color: #656969;
+    font-size: 13px;
+}
+
+.crauser1>div>p+p:hover {
+    text-decoration: underline;
+}
+
+.crauser1>div>a {
+    text-decoration: underline;
+    color: #4C6CF8;
+}
+
+#crauser5 {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#crauser5>div>img {
+    width: 500px;
+    height: 300px;
+}
+
+#crauser6 {
+    border-left: 6px solid green;
+    padding-left: 10px;
+}
+
+.crauser4 {
+    padding-top: 80px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.services {
+    margin-top: 80px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    outline-width: thick;
+}
+
+.services>div {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 90%;
+    /* display: flex;
+text-align: center;
+/* justify-content: center; */
+}
+
+.services>div img {
+    width: 80%;
+    height: 100%;
+}
+
+.services>div>div>h3 {
+    /* background-color: red; */
+    font-size: 18px;
+    color: #282828;
+}
+
+.services>div>div>h3+p {
+    /* background-color: red; */
+    font-family: "Cooper Light", Georgia, Times, "Times New Roman", serif;
+    /* text-decoration: underline; */
+    color: #282828;
+}
+
+.services>div>div>p+a {
+    text-decoration: underline;
+    color: #4C6CF8;
+}
+
+.services>div {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    outline-width: thick;
+}
+
+#navbar {
+    display: flex;
+}
+
+#uprnav {
+    display: flex;
+    border-bottom: 0.05px solid;
+    border-bottom-color: rgb(227, 223, 223);
+    border-width: thin;
+    width: 100%;
+    height: 60px;
+}
+
+#uprnav1 {
+    display: flex;
+    border-bottom: 0.05px solid;
+    border-bottom-color: rgb(227, 223, 223);
+    border-width: thin;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+#art {
+    margin-left: 38px;
+    position: relative;
+    left: 210px;
+    font-size: 17px;
+    font: weight 4px;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: rgb(56, 48, 48); */
+}
+
+#art::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(93, 84, 84);
+    height: 2px;
+    width: 0;
+    bottom: -4px;
+    left: 50%;
+    transition: 0.5s;
+}
+
+#art:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+p {
+    font: weight 4px;
+    font-style: normal;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: rgb(56, 48, 48);
+}
+
+a {
+    color: rgb(128, 121, 121);
+    text-decoration: none;
+}
+
+p:hover {
+    color: rgb(9, 140, 120);
+}
+
+#dis {
+    margin-left: 20px;
+}
+
+#mimg {
+    width: 200px;
+    height: 50px;
+    /* border: 1px solid black;  */
+    margin-left: 410px;
+}
+
+#mlogo {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    bottom: -18px;
+}
+
+#search {
+    margin-left: 420px;
+}
+
+#search_logo:hover {
+    color: rgb(9, 140, 120);
+    background-color: rgb(9, 140, 120);
+    border-color: rgb(9, 140, 120);
+}
+
+#search_logo {
+    margin-left: 8px;
+    margin-top: 22px;
+    background-color: aliceblue;
+    /* border: 1px solid black; */
+    height: 14px;
+    width: 16px;
+}
+
+#login {
+    margin-left: 20px;
+}
