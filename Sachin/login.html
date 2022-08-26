@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=o, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./Style/navbar.css">
+</head>
+<body>
+     
+    <div id="nav_container"></div>
+
+    <h1>hello</h1>
+</body>
+</html>
+
+<script type="module">
+
+    import navbar from './Components/navbar.js'
+    console.log(navbar)
+
+    let nav_container=document.getElementById('nav_container')
+    nav_container.innerHTML=navbar();
+</script>
