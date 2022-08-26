@@ -144,25 +144,15 @@ let arr=[{
 }
 
 ]
+console.log(arr.length)
 
+appendata(arr,0,3);
 
-appendata(arr,1);
-
-function appendata(data,num){
+function appendata(data,start,end){
   document.getElementById("box").innerHTML=null;
-  let n;
-  let start;
-  if(num==1){
-    start=0
-     n=3
-  }else if(num==2){
-    start=3
-     n=6
-  }else{
-    start=6
-    n=9
-  }
-  for(let i=start; i<n; i++){
+  
+ 
+  for(let i=start; i<end; i++){
     
     let div=document.createElement("div");
     let img=document.createElement("img");
@@ -181,3 +171,40 @@ function appendata(data,num){
 
   }
    }
+   document.querySelector("#fiction").addEventListener("click",function(){
+   
+    appendata(arr,3,6);
+
+   })
+   document.querySelector("#children").addEventListener("click",function(){
+    appendata(arr,6,9);
+   })
+   document.querySelector("#nonfiction").addEventListener("click",function(){
+    appendata(arr,9,12);
+   })
+   document.querySelector("#arts").addEventListener("click",function(){
+    appendata(arr,12,15);
+   })
+   document.querySelector("#radio").addEventListener("click",function(){
+    appendata(arr,15,18);
+   })
+   document.querySelector("#zines").addEventListener("click",function(){
+    appendata(arr,18,21);
+   })
+   document.querySelector("#antho").addEventListener("click",function(){
+    appendata(arr,21,24);
+   })
+   document.querySelector("#acadamics").addEventListener("click",function(){
+    appendata(arr,15,18);
+   })
+
+   let tabs=document.querySelectorAll("#buttons>button")
+   tabs.forEach(function(tab,index){
+    tab.addEventListener("click",function(){
+        tabs.forEach((tab)=>{
+            tab.classList.remove("active")
+        })
+tabs[index].classList.add("active")
+    })
+
+   })

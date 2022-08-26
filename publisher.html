@@ -11,28 +11,89 @@
             display: flex;
             width: 90%;
             margin: auto;
+            padding: 30px;
         }
+        a{
+            text-decoration: none;
+        }
+       
         #buttons{
-            width: 140px;
+            width:20%;
+        }
+        #buttons>button{
+           
+            margin-top: 10px;
+            
+            background-color: #DBE7EF;
+            border: none;
+            padding: 6px 18px;
+            font-size: 18px;
+        }
+
+        #buttons>button:hover{
+
+            border: 1px solid blue;
+        }
+     
+        #box{
+            width: 80%;
+            margin-left: 20px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:10px;
+        }
+        #box img{
+            width: 100%;
+        }
+        #header1{
+            width: 90%;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+           
+        }
+        #header1>a{
+            margin-top: 20px;
+           
+        }
+        hr{
+            width: 90%;
+        }
+        #containerexplore{
+            width: 90%;
+            background-color: rgba(255,242,236,0.5);
+            margin: auto;
+        }
+        #buttons>.active{
+            background-color: blue;
+            color: white;
         }
     </style>
 </head>
 <body>
-  <div id="container">
-    <div id="buttons">
-        <button>Fiction</button>
-        <button>Children's Book</button>
-        <button>Nonfiction</button>
-        <button>Arts Books</button>
-        <button>Radio & Podcasts</button>
-        <button>Zines</button><br>
-        <button>Anthologies</button>
-        <button>Acadamics</button>
-    </div>
-    <div id="box">
+    <div id="containerexplore">
+        <div id="header1"><h1>Explore Publishing</h1>
+            <a href="">Discover more</a></div>
+            <hr>
         
+      <div id="container">
+        
+        <div id="buttons">
+            <button class="active" id="fiction">Fiction</button>
+            <button id="children">Children's Book</button>
+            <button id="nonfiction">Nonfiction</button>
+            <button id="arts">Arts Books</button>
+            <button id="radio">Radio & Podcasts</button>
+            <button id="zines">Zines</button><br>
+            <button id="antho">Anthologies</button>
+            <button id="acadamics">Acadamics</button>
+        </div>
+        <div id="box">
+            
+        </div>
+      </div>
     </div>
-  </div>
+
 </body>
 </html>
 <script src='publisher.js'>

@@ -60,7 +60,6 @@ let arr=[{
       n=9
     }
     for(let i=start; i<n; i++){
-      
       let div=document.createElement("div");
       let div1=document.createElement("div");
       div1.setAttribute("id","image")
@@ -90,9 +89,25 @@ let arr=[{
      }
   for(let i=1; i<=3; i++){
     let button=document.createElement("button");
+    if(i==1){
+      button.setAttribute("class","activ");
+    }
+    
     button.innerText=i;
     button.addEventListener("click",function(){
       appendata(arr,i);
     })
     document.querySelector("#button").append(button);
   }
+
+  let butons=document.querySelectorAll("#button>button");
+  
+  butons.forEach(function(tab,index){
+   tab.addEventListener("click",function(){
+    butons.forEach((tab)=>{
+           tab.classList.remove("activ")
+       })
+       butons[index].classList.add("activ")
+   })
+
+  })
