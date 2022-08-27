@@ -19,8 +19,8 @@ function navbar(){
 <div id="uprnav1">
    <a id="art" href="">Arts</a>
    <a id="art" href="">Comics & illustration</a>
-   <a id="art" href="">Design & Tech</a>
-   <a id="art" href="">Film</a>
+   <a id="art" href="./design&tech.html">Design & Tech</a>
+   <a id="art" href="./film.html">Film</a>
    <a id="art" href="">Food & Craft</a>
    <a id="art" href="">Games</a>
    <a id="art" href="">Music</a> 
