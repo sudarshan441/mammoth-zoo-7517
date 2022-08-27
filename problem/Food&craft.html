@@ -1,0 +1,781 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Food & Craft</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="./Style/navbar.css">
+    <link rel="stylesheet" href="./Style/food&craft.css">
+    <link rel="stylesheet" href="./Style/footer.css">
+<!-- 
+    <style>
+        #header{
+            width: 90%;
+            margin: auto;
+        }
+        #container{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 90%;
+            gap: 40px;
+            margin: auto;
+        }
+
+    </style>
+    <style>
+   
+    main{
+    
+        
+        margin:  auto;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    span{
+        position: absolute;
+        top: 0%;
+        font-size: 30px;
+        
+        color: black;
+        cursor: pointer;
+        left: .5%;
+        z-index: 1;
+    }
+    span:nth-child(1){
+        left: 91%;
+        text-align: right;
+    }
+    span:nth-child(2){
+        left: 95%;
+        text-align: right;
+    }
+    section{
+        width: 100%;
+        background: white;
+        margin: 10px auto;
+        display: flex;
+        justify-content: left;
+        overflow-x: auto;
+        
+    }
+    section::-webkit-scrollbar{
+        visibility: hidden;
+
+    }
+    section>div{
+      min-width: 320px;
+        position: relative;
+        left: 0px;
+        padding-top: 60px;
+
+        
+    }
+    section>div>h1{
+       width:300px;   
+    }
+    section>div>p{
+        width:300px;  
+    }
+    section>div>img{
+        width:305px;
+       height:150px;
+    }
+    .crousel{
+        width: 90%;
+        margin: auto;
+    }
+   
+    #container>div>img{
+        /* width:450px;
+        height: 232px; */
+        width: 100%;
+        height: 394px;
+    }
+
+    #cont>div{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    #cont>div>div>img{
+        width: 160px;
+        height: 90px;
+    }
+    #cont>div>div>h4{
+        margin-top: 0px;
+    }
+    #cont>div>div>p{
+        margin-top: -15px;
+    }
+    #cont>div>div:nth-child(2){
+        margin-left: 20px;
+    }
+    #button>button{
+border: none;
+color: blue;
+background-color: white;
+    }
+    #button>button:nth-child(1){
+        margin-left: 85%;
+    }
+    #container2{
+        text-align: center;
+    }
+    #container2>input{
+        padding: 15px;
+        width: 478px;
+        height: 15px;      
+    }
+   
+    #container2>button{
+        padding: 13.5px 18.5px;
+        background-color: #464646;
+        color: white;
+    }
+    #container2>button:hover{
+        background-color:black
+    }
+    #container3{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    }
+    #container3>div>img{
+        width: 544px;
+        height: 240px;
+    }
+    #childcontainer3{
+        border-left: 6px solid green;
+        padding-left: 10px;
+    }
+    .crousel>div{
+     display: flex;
+   
+    }
+    .crousel>div>a{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .crousel>div>h3{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    i{
+        margin-left:10px;
+        margin-top: -40px;
+    }
+    
+/* *************explore filter*********** */
+
+#carier{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        padding: 30px;
+    }
+    a{
+        text-decoration: none;
+    }
+   
+    #btn{
+        width:20%;
+        display:block
+    }
+    #btn>button{
+       
+        margin-top: 10px;
+        
+        background-color: #DBE7EF;
+        border: none;
+        padding: 6px 18px;
+        font-size: 18px;
+    }
+
+    #btn>button:hover{
+
+        border: 1px solid blue;
+    }
+ 
+    #box{
+        width: 80%;
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:10px;
+    }
+    #box img{
+        width: 100%;
+    }
+    #heading{
+        width: 90%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+       
+    }
+    #heading>a{
+        margin-top: 20px;
+       
+    }
+    hr{
+        width: 90%;
+    }
+    #explore{
+        width: 90%;
+        background-color: rgba(255,242,236,0.5);
+        margin: auto;
+    }
+    #btn>.active{
+        color: white;
+        background-color: blue;
+    }
+  /*******************explore filter food-2**************** */
+  
+  #carier3{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        padding: 30px;
+    }
+    a{
+        text-decoration: none;
+    }
+   
+    #btn3{
+        width:20%;
+        display:block
+    }
+    #btn3>button{
+       
+        margin-top: 10px;
+        
+        background-color: #DBE7EF;
+        border: none;
+        padding: 6px 18px;
+        font-size: 18px;
+    }
+
+    #btn3>button:hover{
+
+        border:1px solid blue
+    }
+ 
+    #box3{
+        width: 80%;
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:10px;
+    }
+    #box3 img{
+        width: 100%;
+    }
+    #heading{
+        width: 90%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+       
+    }
+    #heading>a{
+        margin-top: 20px;
+       
+    }
+    hr{
+        width: 90%;
+    }
+    #explore3{
+        width: 90%;
+        background-color: rgba(255,242,236,0.5);
+        margin: auto;
+    }
+    #btn3>.active{
+        background-color: blue;
+        color: white;
+    }
+  
+  /**************** CREATOR CORNER**************** */
+.corner{
+    width:90%;
+    margin:auto;
+}
+.corner>div:first-child{
+    height:60px;
+    padding-left:20px
+}
+.corner>div{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:70px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    justify-content: center;
+    width:100%;
+}
+.corner>div>div{
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(70, 88, 116, 0.9) 0px 0px 0px 1px;
+    height:auto;
+    display:grid;
+    grid-template-columns:35% 57%;
+    padding:15px;
+    gap:30px;
+    
+}
+.corner>div>div>div:first-child {
+    display:flex;
+    align-items:center;
+
+}
+.corner>div>div>div>img{
+    width:86%;
+    align-items: center;
+}
+
+/* more to explore */
+.scroll_img{
+    width:90%;
+    margin:auto;
+}
+
+.scroll_img>div{
+    border:0px solid;
+    display:flex;
+    flex-wrap:wrap;
+    height:auto;
+    margin:auto;
+    padding:30px;
+    justify-content:space-between;
+}
+.scroll_img>div>div {
+    border:0px solid;
+    width:22%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding:7px;
+}
+.scroll_img>div>div>p{
+    font-size: 20px;
+}
+.scroll_img>div>div>img{
+    width:100%;
+    height:250px;
+}
+.creator{
+    width:100%;
+    height:330px;
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 45px;
+}
+.creator>div{
+    width:45%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.creator>div img{
+      width:100%;
+      height: 45%;
+}
+
+    </style> -->
+
+</head>
+<body>
+
+    <div id="nav_container"></div>
+
+    <div id="header">
+<h1>Food & craft</h1>
+<p>See how artisans and entrepreneurs are using Kickstarter to break new ground in food, fashion, and crafts.</p>
+<a href="">Explore Crafts</a>
+<a href="">Explore Fashion</a>
+<a href="">Explore Food</a>
+    </div>
+    <div id="container">
+        <div >
+            <h3>FEATURED PROJECT</h3>
+            <img src=https://ksr-ugc.imgix.net/assets/038/319/663/fc4f43b29fac6f5f286a5e7f10e0e727_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1660836983&auto=format&frame=1&q=92&s=f8e0608bedd713c0e7affcb9ba34eec4" alt="">
+            <h1>Slybonsai Ita Bag Restock Collection</h1>
+            <p>A collective restock of classic, cute, and functional ita bags with the introduction to new variants and more!</p>
+            <p>By Noah Swartz</p>
+        </div>
+        <div id="pagination">
+            <h3>RECOMMENDED FOR YOU</h3>
+            <div id="cont"></div>
+            <div id="button"></div>
+        </div>
+    </div>
+    <div id="container2">
+        <h1>The zeitgeist, delivered to your inbox.</h1>
+        <h3>Sign up to receive Kickstarter’s Happening newsletter, highlighting new projects and buzzworthy stories</h3>
+        <input type="email" placeholder="Enter email address"> 
+        <button>Subscribe</button>
+
+    </div>
+    </div>
+    <div class="crousel">
+            <div><h3>FRESH FAVORITES</h3>
+            <a href="">Discover more ></a></div>
+          
+        <main>
+            
+            <span>&#139;</span>
+            <span>&#155;</span>
+            
+            <section>
+                <div><img src="https://ksr-ugc.imgix.net/assets/038/335/342/66d0d131ebff544e4ce3e4cb4b7cc703_original.png?ixlib=rb-4.0.2&w=680&fit=max&v=1660957485&gif-q=50&lossless=true&s=180d8d949682b170689a0d03b4fd52bb" alt="">
+                    <h1>Growing food for the community with the community's support</h1>
+                    <p>Building a sustainable Community Supported Agriculture program for the Mornington Peninsula, Victoria, Australia.</p>
+                    <p>By Thomas Kennett</p>
+                </div>
+    
+                <div><img src="https://ksr-ugc.imgix.net/assets/038/255/668/527c119833bd1cf3dc2785e79e18d1fd_original.jpg?ixlib=rb-4.0.2&w=680&fit=max&v=1660307500&gif-q=50&q=92&s=7be286903f2dc214539e1ce268d524f4" alt="">
+                    <h1>Proper Tea Advent Calendar</h1>
+                    <p>Large Lovely Tea Leaves! New Option Of Biodegradable Pyramid Tea Bags! Choose Christmas, Breakfast, Caffeine Free Or Single Origin..</p>
+                    <p>By YAWN Coffee Co</p></div>
+    
+                <div><img src="https://ksr-ugc.imgix.net/assets/038/340/726/65998a779735f5e0ee37647aafeee06b_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1661022295&auto=format&frame=1&q=92&s=a9ca40d8edf8ef99f31e63f29ea196bd" alt="">
+                    <h1>Houdini Co.</h1>
+                    <p>Horror and Goth Inspired Streetwear</p><p>By Erik Houdini</p></div>
+    
+                <div><img src="https://ksr-ugc.imgix.net/assets/038/313/596/c2cb68bc127f27935c536b1b03b36d51_original.JPG?ixlib=rb-4.0.2&w=680&fit=max&v=1660788262&gif-q=50&q=92&s=2d3a6adafc15c8d1362970a4f33cdd9f" alt="">
+                    <h1>Meinolf Weaving Center San Anselmo</h1>
+                    <p>A place for weavers and textile lovers to gather, share knowledge and share time. Making things together brings us together.
+                        .</p><p>By Cowrie Games</p></div>
+                    
+                    <div><img src="https://ksr-ugc.imgix.net/assets/038/279/649/87e0354524b7417e6a6e21937dacd16e_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660559642&auto=format&frame=1&q=92&s=6e2f873b639ef4103341c3272fcbb36f" alt="">
+                        <h1>The Curl Spa - Hydrating Hair </h1>
+                        <p> All Natural Hair Product for Curls Waves and Coils!</p>
+                        <p> By Lea Muses</p>
+                    </div>
+        
+                    <div><img src="https://ksr-ugc.imgix.net/assets/038/111/117/71c43d436001194abcb3fdbe2720d662_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659101270&auto=format&frame=1&q=92&s=c1fc7e01f8c5fd426dced8617ac10cac" alt="">
+                        <h1>The Penrose: A British Sheepskin Dog Coat</h1><p>An aviator-style, British sheepskin coat with a honey caramel fur interior and sumptuously soft napalan finish. Made in Somerset, UK.</p>
+                        <p>By Daniel Hand</p></div>
+        
+                    <div><img src="https://ksr-ugc.imgix.net/assets/038/237/305/84442204a8d6110899b809e42e5616df_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660159538&auto=format&frame=1&q=92&s=5fdd986b454e58f781532e0969d5b7a5" alt="">
+                        <h1>Forest Bathing Washi Tapes & Notepads</h1>
+                        <p>Nature themed stationery collection</p>
+                        <p>By Ellis Woolley</p></div>
+                        
+                    <div><img src="https://ksr-ugc.imgix.net/assets/038/290/599/13b0cbc91b0ed1ccfad8e868f6f8718f_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660633409&auto=format&frame=1&q=92&s=b68d73148f44f6321a0d86e8fb3fad38" alt="">
+                        <h1>NANOLITH - Cyberpunk RPG Board Game</h1>
+                        <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p>
+                        <p>By Jim</p></div>
+                        <div><img src="https://ksr-ugc.imgix.net/assets/038/132/072/7f92d327dd50871407ce58bcaf3fa38a_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659312087&auto=format&frame=1&q=92&s=8effa5b3126d6b9b2393b56405c75514" alt="">
+                            <h1>Project Ironside | A $399 Extendable Board Game Table</h1>
+                            <p>Not $1999. Just $399. | Fully extendable | Larger play area | Convertible toppers | Accessories from $10 | Modern minimalist design</p><p>By Edaureen Muhamad Nor</p></h2>
+                        </div>
+            
+                        <div><img src="https://ksr-ugc.imgix.net/assets/037/970/943/c52e3e26f3d6b363d99489935258e3eb_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657919620&auto=format&frame=1&q=92&s=312a757fe5e400777926ccfa25e257be" alt="">
+                            <h1>Sea of Legends: Vengeance of the Empires</h1><p>A new expansion for Sea of Legends along with a reprint of the original and expansion.</p><p>By Long Tail Games (Ash)</p></div>
+            
+                        <div><img src="https://ksr-ugc.imgix.net/assets/038/181/690/ec019166c8afc0b57371a304eb3303fe_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659673184&auto=format&frame=1&q=92&s=679d3afddb2f94ba1330c78aadee577e" alt="">
+                            <h1>Trailblazers | Outdoor Adventure Game</h1>
+                            <p>A puzzly, portable game of hiking, biking, & kayaking built to survive the great outdoors!</p><p>By James Hanna</p></div>
+            
+                        <div><img src="https://ksr-ugc.imgix.net/assets/038/176/464/b70c4c1987df0862d23d3cafe1c2324c_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659630545&auto=format&frame=1&q=92&s=4e281d3f96f457e1ac486f1eb2718acc" alt="">
+                            <h1>This Ship Is a Tomb</h1>
+                            <p>A procedurally-generated derelict-crawl for Mothership 1E through a shifting, transdimensional vessel.</p><p>By Nick Murray of Bitewing Games</p></div>
+                            
+                            <div><img src="https://ksr-ugc.imgix.net/assets/038/111/117/71c43d436001194abcb3fdbe2720d662_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659101270&auto=format&frame=1&q=92&s=c1fc7e01f8c5fd426dced8617ac10cac" alt="">
+                                <h1>Sebastian Crowe's Guide to Drakkenheim</h1>
+                                <p>A players guide and sourcebook which includes brand new 5e subclasses and takes you through the world of Drakkenheim!</p><p>By Dungeon Dudes</p></h2>
+                            </div>
+                
+                            <div><img src="https://ksr-ugc.imgix.net/assets/038/021/590/494794ef06dd27272e0f7b2b8cdd8b50_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658350189&auto=format&frame=1&q=92&s=a69a53678ad4a4768c2f80f91f7508d9" alt=""><h1>Halls of Hegra</h1><p>From an abandoned fortress you command a group of Norwegian volunteers fighting numerically superior German forces at the start of WW2.</p><p>By Woodpecker Games</p></div>
+                
+                            <div><img src="https://ksr-ugc.imgix.net/assets/038/213/220/6c9cbc47fa2e7df895522017172a89b5_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659986272&auto=format&frame=1&q=92&s=401650dcba47e0e50a758a4ebd062f1e" alt="">
+                                <h1>Doomensions: Pop-Up Mystery Manor</h1>
+                                <p>Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company</p><p>By Woodpecker Games</p></div>
+                
+                            <div><img src="https://ksr-ugc.imgix.net/assets/038/161/718/df2878ea3191f6c87d6e79bab775212c_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659521562&auto=format&frame=1&q=92&s=d544bde78327fe6660c3b05793e37837" alt="">
+                                <h1>NANOLITH - Cyberpunk RPG Board Game</h1>
+                          <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p><p>By Wraithmarked Creative</p></div>
+            </section>
+        </main>
+    </div>
+    
+
+
+     
+    <div id="explore">
+        <div id="heading"><h1>Explore Publishing</h1>
+            <a href="">Discover more</a></div>
+            <hr>
+        
+      <div id="carier">
+        
+        <div id="btn">
+            <button id="pop" class="active">Drinks</button><br>
+                    <button id="cout" >Restaurant</button><br>
+                    <button id="clas">Food Trucks</button><br>
+                    <button id="rock">Small Batch</button><br>
+                    <button id="indi">Vegan</button><br>
+                    <button id="jaz">Spaces</button><br>
+                    <button id="worl">Farmer's Maker</button><br>
+        </div>
+        <div id="box">
+            
+        </div>
+      </div>
+    </div>
+    <div class="crousel">
+        <div><h3>TAKING OFF</h3>
+        <a href=""></a></div>
+      
+    <main>
+        
+        <span>&#139;</span>
+        <span>&#155;</span>
+        
+        <section>
+            <div><img src="https://ksr-ugc.imgix.net/assets/038/335/342/66d0d131ebff544e4ce3e4cb4b7cc703_original.png?ixlib=rb-4.0.2&w=680&fit=max&v=1660957485&gif-q=50&lossless=true&s=180d8d949682b170689a0d03b4fd52bb" alt="">
+                <h1>Growing food for the community with the community's support</h1>
+                <p>Building a sustainable Community Supported Agriculture program for the Mornington Peninsula, Victoria, Australia.</p>
+                <p>By Thomas Kennett</p>
+            </div>
+
+            <div><img src="https://ksr-ugc.imgix.net/assets/038/255/668/527c119833bd1cf3dc2785e79e18d1fd_original.jpg?ixlib=rb-4.0.2&w=680&fit=max&v=1660307500&gif-q=50&q=92&s=7be286903f2dc214539e1ce268d524f4" alt="">
+                <h1>Proper Tea Advent Calendar</h1>
+                <p>Large Lovely Tea Leaves! New Option Of Biodegradable Pyramid Tea Bags! Choose Christmas, Breakfast, Caffeine Free Or Single Origin..</p>
+                <p>By YAWN Coffee Co</p></div>
+
+            <div><img src="https://ksr-ugc.imgix.net/assets/038/340/726/65998a779735f5e0ee37647aafeee06b_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1661022295&auto=format&frame=1&q=92&s=a9ca40d8edf8ef99f31e63f29ea196bd" alt="">
+                <h1>Houdini Co.</h1>
+                <p>Horror and Goth Inspired Streetwear</p><p>By Erik Houdini</p></div>
+
+            <div><img src="https://ksr-ugc.imgix.net/assets/038/313/596/c2cb68bc127f27935c536b1b03b36d51_original.JPG?ixlib=rb-4.0.2&w=680&fit=max&v=1660788262&gif-q=50&q=92&s=2d3a6adafc15c8d1362970a4f33cdd9f" alt="">
+                <h1>Meinolf Weaving Center San Anselmo</h1>
+                <p>A place for weavers and textile lovers to gather, share knowledge and share time. Making things together brings us together.
+                    .</p><p>By Cowrie Games</p></div>
+                
+                <div><img src="https://ksr-ugc.imgix.net/assets/038/279/649/87e0354524b7417e6a6e21937dacd16e_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660559642&auto=format&frame=1&q=92&s=6e2f873b639ef4103341c3272fcbb36f" alt="">
+                    <h1>The Curl Spa - Hydrating Hair </h1>
+                    <p> All Natural Hair Product for Curls Waves and Coils!</p>
+                    <p> By Lea Muses</p>
+                </div>
+    
+                <div><img src="https://ksr-ugc.imgix.net/assets/038/111/117/71c43d436001194abcb3fdbe2720d662_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659101270&auto=format&frame=1&q=92&s=c1fc7e01f8c5fd426dced8617ac10cac" alt="">
+                    <h1>The Penrose: A British Sheepskin Dog Coat</h1><p>An aviator-style, British sheepskin coat with a honey caramel fur interior and sumptuously soft napalan finish. Made in Somerset, UK.</p>
+                    <p>By Daniel Hand</p></div>
+    
+                <div><img src="https://ksr-ugc.imgix.net/assets/038/237/305/84442204a8d6110899b809e42e5616df_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660159538&auto=format&frame=1&q=92&s=5fdd986b454e58f781532e0969d5b7a5" alt="">
+                    <h1>Forest Bathing Washi Tapes & Notepads</h1>
+                    <p>Nature themed stationery collection</p>
+                    <p>By Ellis Woolley</p></div>
+                    
+                <div><img src="https://ksr-ugc.imgix.net/assets/038/290/599/13b0cbc91b0ed1ccfad8e868f6f8718f_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660633409&auto=format&frame=1&q=92&s=b68d73148f44f6321a0d86e8fb3fad38" alt="">
+                    <h1>NANOLITH - Cyberpunk RPG Board Game</h1>
+                    <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p>
+                    <p>By Jim</p></div>
+                    <div><img src="https://ksr-ugc.imgix.net/assets/038/132/072/7f92d327dd50871407ce58bcaf3fa38a_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659312087&auto=format&frame=1&q=92&s=8effa5b3126d6b9b2393b56405c75514" alt="">
+                        <h1>Project Ironside | A $399 Extendable Board Game Table</h1>
+                        <p>Not $1999. Just $399. | Fully extendable | Larger play area | Convertible toppers | Accessories from $10 | Modern minimalist design</p><p>By Edaureen Muhamad Nor</p></h2>
+                    </div>
+        
+                    <div><img src="https://ksr-ugc.imgix.net/assets/037/970/943/c52e3e26f3d6b363d99489935258e3eb_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657919620&auto=format&frame=1&q=92&s=312a757fe5e400777926ccfa25e257be" alt="">
+                        <h1>Sea of Legends: Vengeance of the Empires</h1><p>A new expansion for Sea of Legends along with a reprint of the original and expansion.</p><p>By Long Tail Games (Ash)</p></div>
+        
+                    <div><img src="https://ksr-ugc.imgix.net/assets/038/181/690/ec019166c8afc0b57371a304eb3303fe_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659673184&auto=format&frame=1&q=92&s=679d3afddb2f94ba1330c78aadee577e" alt="">
+                        <h1>Trailblazers | Outdoor Adventure Game</h1>
+                        <p>A puzzly, portable game of hiking, biking, & kayaking built to survive the great outdoors!</p><p>By James Hanna</p></div>
+        
+                    <div><img src="https://ksr-ugc.imgix.net/assets/038/176/464/b70c4c1987df0862d23d3cafe1c2324c_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659630545&auto=format&frame=1&q=92&s=4e281d3f96f457e1ac486f1eb2718acc" alt="">
+                        <h1>This Ship Is a Tomb</h1>
+                        <p>A procedurally-generated derelict-crawl for Mothership 1E through a shifting, transdimensional vessel.</p><p>By Nick Murray of Bitewing Games</p></div>
+                        
+                        <div><img src="https://ksr-ugc.imgix.net/assets/038/111/117/71c43d436001194abcb3fdbe2720d662_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659101270&auto=format&frame=1&q=92&s=c1fc7e01f8c5fd426dced8617ac10cac" alt="">
+                            <h1>Sebastian Crowe's Guide to Drakkenheim</h1>
+                            <p>A players guide and sourcebook which includes brand new 5e subclasses and takes you through the world of Drakkenheim!</p><p>By Dungeon Dudes</p></h2>
+                        </div>
+            
+                        <div><img src="https://ksr-ugc.imgix.net/assets/038/021/590/494794ef06dd27272e0f7b2b8cdd8b50_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658350189&auto=format&frame=1&q=92&s=a69a53678ad4a4768c2f80f91f7508d9" alt=""><h1>Halls of Hegra</h1><p>From an abandoned fortress you command a group of Norwegian volunteers fighting numerically superior German forces at the start of WW2.</p><p>By Woodpecker Games</p></div>
+            
+                        <div><img src="https://ksr-ugc.imgix.net/assets/038/213/220/6c9cbc47fa2e7df895522017172a89b5_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659986272&auto=format&frame=1&q=92&s=401650dcba47e0e50a758a4ebd062f1e" alt="">
+                            <h1>Doomensions: Pop-Up Mystery Manor</h1>
+                            <p>Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company</p><p>By Woodpecker Games</p></div>
+            
+                        <div><img src="https://ksr-ugc.imgix.net/assets/038/161/718/df2878ea3191f6c87d6e79bab775212c_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659521562&auto=format&frame=1&q=92&s=d544bde78327fe6660c3b05793e37837" alt="">
+                            <h1>NANOLITH - Cyberpunk RPG Board Game</h1>
+                      <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p><p>By Wraithmarked Creative</p></div>
+        </section>
+    </main>
+</div>
+
+
+
+    <div id="explore3">
+        <div id="heading"><h1>Explore Fashion</h1>
+            <a href="">Discover more</a></div>
+            <hr>
+        
+      <div id="carier3">
+        
+        <div id="btn3">
+            <button id="access" class="active">Accessories</button><br>
+            <button id="appa">Apparel</button><br>
+            <button id="jewel">Jewelry</button><br>
+            <button id="foot">footwear</button><br>
+            <button id="pet">Pet Fashion</button><br>
+            <button id="child">Childrenwear</button><br>
+            <button id="ready">Ready-To-Wear</button><br>
+        </div>
+        <div id="box3">
+            
+        </div>
+      </div>
+    </div>
+
+
+    
+<div class="scroll_img">
+    <div></h3>MORE TO EXPLORE</h3></div>
+        <div>
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.0ntCGrIUnxvR23SZDq5F5QHaNK?w=115&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="img">
+                <h2>Allen Strange's Electronic Music</h2>
+                <p>Reprinting Allen Strange's Electronic Music: Systems, Techniques, and Controls.</p>
+             </div>
+             <div>
+                <img src="https://th.bing.com/th/id/OIP.kI2wL5uKES4siDMowuasLQHaI-?w=127&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="img">
+                <h2>Daughter of Chopin (Album)</h2>
+                <p>Over two hours of Chopin's most beautiful, difficult, and famous piano music.</p>
+             </div>
+             <div><img src="https://th.bing.com/th/id/OIP.4rDac4dZw3OzPXsMv61djQHaJ8?w=186&h=250&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="img">
+                <h2>Cartoon Babylon</h2>
+                <p>An album of new songs by Daniel Carlson</p></div>
+             <div>
+                <img src="https://www.fashionbelief.com/wp-content/uploads/2014/01/business-formal.jpg" alt="img">
+                <h2>LCartoon Babylon</h2>
+                <p>An album of new songs by Daniel Carlson?</p>
+            </div>
+        </div>
+         
+         
+    </div>
+     
+    
+    <div class="corner">
+        
+    <div><h3>CREATOR CORNER</h3></div>
+    <div>    <div>
+        <div>
+            <img src="https://cdn.filestackcontent.com/resize=width:2000/lwIi1vATWiLyuzcPZQwj" alt="img">
+        </div>
+        <div>
+            <h2>Allen Strange's Electronic Music</h2>
+        <p>Reprinting Allen Strange's Electronic Music: Systems, Techniques, and Controls.</p>
+        </div>
+    </div>
+    <div>
+            <div>
+            <img src="https://cdn.filestackcontent.com/resize=width:800/xjpmJOHiRniEtxGp4GfC" alt="img">
+        </div>
+        <div>
+            <h2>How to tell the story of your creative work</h2>
+        <p>It all comes down to knowing how to harness attention. When you don’t provide enough information </p>
+            </div>
+    </div>
+    <div>
+        <div>
+            <img src="https://cdn.filestackcontent.com/resize=width:800/xjpmJOHiRniEtxGp4GfC" alt="img">
+        </div>
+        <div>
+            <h2>How to tell the story of your creative work</h2>
+        <p>It all comes down to knowing how to harness attention. When you don’t provide enough information </p>
+            </div>
+    </div>
+    <div>
+        <div>
+            <img src="https://cdn.filestackcontent.com/resize=width:800/xjpmJOHiRniEtxGp4GfC" alt="img">
+        </div>
+        <div>
+            <h2>How to tell the story of your creative work</h2>
+        <p>It all comes down to knowing how to harness attention. When you don’t provide enough information </p>
+            </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- *************footer************** -->
+    
+    <div id="Bottom">
+
+        <div id="bottom1">
+          <a id="com" href="">Art</a>
+          <a id="com" href="">Comics & illustration</a>
+          <a id="com" href="">Design & Tech</a>
+          <a id="com" href="">Film</a>
+          <a id="com" href="">Food & Craft</a>
+          <a id="com" href="">Games</a>
+          <a id="com" href="">Music</a> 
+          <a id="com" href="">Publishing</a>
+      </div>
+      
+      </div>
+      
+      
+      
+      <div id="bottom2">
+            <div id="bottom2-1">
+      
+               <div id="bot1">
+                <p id="about">ABOUT</p>
+                <p class="stats" >About us</p>
+                <p class="stats">Our charter</p>
+                <p class="stats">Stats</p>
+                <p class="stats">Press</p>
+                <p class="stats">Jobs</p>
+               </div>
+      
+               <div id="bot2">
+                <p id="about">SUPPORT</p>
+                <p class="stats">Help Center</p>
+                <p class="stats">Our Rules</p>
+                <p class="stats">Creator Resourses</p>
+                <p class="stats">Forward Funds</p>
+                <p class="stats">Brand assests</p>
+               </div>
+       
+      
+               <div id="bot3">
+                <p id="about">MORE FROM KICKSTARTER</p>
+                <p class="stats" >Newsletters</p>
+                <p class="stats" >Kickstarter Magazine</p>
+                <p class="stats" >The Creative Independent</p>
+                <p class="stats" >Mobile apps</p>
+                <p class="stats" >Research</p>
+               </div>
+             
+      
+            </div>
+  
+
+
+</body>
+</html>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="food.js"></script>
+
+
+<script src='food1.js'>
+    
+</script>
+<script type="module">
+
+    import navbar from '/navbar.js'
+    console.log(navbar)
+
+    let nav_container=document.getElementById('nav_container')
+    nav_container.innerHTML=navbar();
+</script>
+

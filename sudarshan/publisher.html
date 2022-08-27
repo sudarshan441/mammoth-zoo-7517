@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+  <style>
+    #uprnav{
+    display: flex;
+    border-bottom: 0.05px solid;
+ border-bottom-color :  rgb(227, 223, 223);
+ border-width: thin;
+    width: 100%;
+    height: 60px;
+
+}
+#uprnav1{
+    display: flex;
+    border-bottom: 0.05px solid;
+ border-bottom-color :  rgb(227, 223, 223);
+ border-width: thin;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+#art{
+margin-left: 38px;
+position: relative;
+left: 210px;
+font-size: 17px;
+font: weight 4px;
+font-size:  inherit; 
+font-weight:  inherit; 
+font-family: Arial, Helvetica, sans-serif;
+/* color: rgb(56, 48, 48); */
+}
+#art::after{
+    content: "" ;
+    position: absolute;
+     background-color: rgb(93, 84, 84);
+    height: 2px;
+    width: 0;
+     bottom: -4px;
+    left:50%;
+    transition: 0.5s;
+}
+#art:hover::after{
+    left: 0;
+     width: 100%;
+}
+
+
+span{
+    font: weight 4px;
+    font-style:normal;
+    font-size:  inherit; 
+    font-weight:  inherit; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 13px;
+    color: rgb(56, 48, 48);
+
+}
+
+
+#uprnav>a{
+    margin-top: 20px;
+}
+
+a{
+    color: rgb(128, 121, 121);
+    text-decoration: none;
+    /* margin-top: 20px; */
+}
+#dis:hover{
+    color: rgb(9, 140, 120);
+}
+#search:hover{
+    color: rgb(9, 140, 120);
+}
+#login:hover{
+    color: rgb(9, 140, 120);
+}
+#start:hover{
+    color: rgb(9, 140, 120);
+}
+#dis{
+  margin-left: 20px;
+    
+}
+#mimg{
+    width: 200px;
+    height: 50px;
+     /* border: 1px solid black;  */
+  margin-left: 410px;
+} 
+
+  #mlogo{
+    width: 100%;
+  height: 40%; 
+  position: relative;
+  bottom: -18px;
+} 
+
+#search{
+    margin-left: 420px;
+}
+/* #search_logo:hover{
+    color: rgb(9, 140, 120);
+    background-color: rgb(9, 140, 120);
+    border-color: rgb(9, 140, 120);
+} */
+#search_logo{
+    /* margin-left: 8px;
+    margin-top: 22px;
+    background-color: aliceblue; */
+    /* border: 1px solid black; */
+    height: 12px;
+    width: 12px;
+    /* border: 1px solid black; */
+    position: relative;
+    bottom: -6px;
+    left: 15px;
+}
+
+#login{
+    margin-left: 35px;
+}
+
+
+
+      
+a,a:hover{
+    text-decoration: none;
+   }
+   .SearchBox{
+    width: 0px;
+      height: 0px;
+    position: relative;
+    width: 0px;
+
+    left: 1200px;
+   }
+   .searchtext{
+  border: 1px solid black;
+    width: 0%;
+    height: 0%;
+    border: 0px;
+    outline: none;
+    /* transition: 0.5s; */
+    font-size: 20px;
+    
+   }
+   .searchbtn{
+    /* border: 1px solid black; */
+    /* background-color: blue; */
+    color: black;
+    height: 10px;
+    width: 10px;
+    right: -35px;
+position: absolute;
+top: -107px;
+
+   }
+ 
+   .SearchBox:hover>.searchtext{
+      width: 90rem;
+      height: 65px;
+      /* border: 1px solid black; */
+      position: relative;
+      right: 1200px;
+      bottom: 125px;
+      padding-left: 50px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      /* box-shadow: 0 2rem --1.5rem rgba(0, 0, 0,0.5); */
+   }
+   
+  </style>
+    <style>
+        #bottom1{
+    display: flex;
+    border-bottom: 2px solid rgb(227, 223, 223);
+    border-top: 2px solid rgb(143, 134, 134);
+ /* border: 1px solid black; */
+
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+#com{
+margin-left: 38px;
+position: relative;
+color: black;
+left: 50px;
+font-size: 17px;
+font: weight 4px;
+font-size:  inherit; 
+font-weight:  inherit; 
+font-family: Arial, Helvetica, sans-serif;
+/* color: rgb(56, 48, 48); */
+}
+#com::after{
+    content: "" ;
+    position: absolute;
+     background-color: rgb(11, 80, 11);
+    height: 1px;
+    width: 0;
+     bottom: -2.5px;
+    left:50%;
+    transition: 0.5s;
+}
+#com:hover::after{
+    left: 0;
+     width: 100%;
+    
+}
+#com:hover{
+color: rgb(11, 80, 11);
+}
+
+
+p{
+    font: weight 4px;
+    font-style:normal;
+    font-size:  inherit; 
+    font-weight:  inherit; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: rgb(56, 48, 48);
+
+}
+
+  #bottom2{
+height: 61%;
+
+/* border: 1px solid black; */
+  }
+
+  #bottom2-1{
+     display: flex;
+     width: 63%;
+     /* border: 1px solid black; */
+     margin: auto;
+     margin-top: 33px;
+}
+
+#lang-curr>img{
+    margin-right: 10px;
+    
+}
+#bot2{
+  margin: auto;
+  margin-bottom: 20;
+  width: 200px;
+  /* border: 1px solid black; */
+}
+#bot1{
+  width: 200px;
+  /* border: 1px solid black; */
+}
+/* border: 1px solid black; */
+
+#about{
+  margin-top: 10;
+  font-size: 18px;
+font-weight:  100px; 
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+
+padding-bottom: 10;
+}
+.stats{
+  color: rgb(92, 83, 83);
+  font-size: 15px;
+font: weight 40px;
+margin: 5%;
+font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.stats:hover{
+ text-decoration: underline;
+ color: rgb(18, 63, 18);
+}
+
+#lastlogo{
+  width: 20px;
+  height: 15px;
+  position: relative;
+  left: 90;
+  top: 50;
+}
+#lastp{
+  color: rgb(92, 83, 83);
+  font-size: 15px;
+font: weight 40px;
+font-family: Arial, Helvetica, sans-serif;
+ position: relative;
+ left: 110;
+ top: 15;
+}
+#face{
+
+width: 20px;
+height: 20px;
+
+margin-left: 20;
+position: relative;
+bottom: 3;
+left: 700;
+}
+#face:hover{
+  border-radius: 50%;
+  border: 1px solid green;
+}
+#lang{
+position: relative;
+border: 0px;
+left: 750;
+bottom: 7;
+width: 110px;
+height: 45px;
+color: rgb(92, 83, 83);
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+padding-left: 15;
+}
+#lang:hover{
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#currency{
+  /* position: relative; */
+border: 0px;
+left: 760;
+bottom: 7;
+width: 170px;
+height: 45px;
+color: rgb(92, 83, 83);
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+padding-left: 15;
+}
+#currency:hover{
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#bottom-logo{
+    display: flex;
+    justify-content: space-between;
+  
+    width: 63%;
+    margin: auto;
+    margin-top: 30px 0 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+    </style>
+    
+    <style>
+         h1{
+            font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight:30;
+            font-size: 20px
+        }
+        h2{
+            font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight:30;
+            font-size: 20px
+        }
+        h3{
+            font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight:30;
+            font-size: 20px
+        }
+        h4{
+            font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight:30;
+            font-size: 20px
+        }
+       
+        a{
+            text-decoration: none;
+        }
+        body>.containerhead{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+             }
+
+            #header{
+                width: 90%;
+                margin: auto;
+            }
+            #container{
+                display:grid;
+                grid-template-columns: repeat(2,1fr);
+                width: 90%;
+                gap: 40px;
+                margin: auto;
+                
+            }
+            
+
+        </style>
+        <style>
+       p{
+        font-size: 14px;
+ margin:0px 0 24px;
+ color: #282828;
+   font-family: Georgia, Times, "Times New Roman", serif;
+   font-weight:50;
+   letter-spacing: 0.4px;
+   line-height: 1.5;
+       }
+		main{
+		
+			
+			margin:  auto;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		span{
+			position: absolute;
+		    top: 0%;
+		    font-size: 30px;
+		    
+		    color: black;
+		    cursor: pointer;
+		    left: .5%;
+		    z-index: 1;
+		}
+		span:nth-child(1){
+			left: 91%;
+			text-align: right;
+		}
+        span:nth-child(2){
+			left: 95%;
+			text-align: right;
+		}
+		section{
+            width: 100%;
+			background: white;
+			margin: 10px auto;
+			display: flex;
+			justify-content: left;
+			overflow-x: auto;
+          
+            
+		}
+		section::-webkit-scrollbar{
+			visibility: hidden;
+
+		}
+		section>div{
+          min-width: 320px;
+			position: relative;
+			left: 0px;
+			padding-top: 60px;
+	
+			
+		}
+        section>div>h1{
+           width:300px;   
+        }
+        section>div>p{
+            width:300px;  
+
+        }
+        section>div>p+p{
+            font-size: 12px;
+ color: #656969;
+   font-family: Georgia, Times, "Times New Roman", serif;
+   font-weight:50; 
+        }
+        section>div>img{
+            width:305px;
+           height:150px;
+        }
+        .crousel{
+            width: 90%;
+            margin: auto;
+        }
+        #cont>div:nth-child(2){
+            height: 100%;
+        }
+       
+        #container>div>img{
+            /* width:450px;
+            height: 232px; */
+            width: 100%;
+            height: 394px;
+        }
+      
+        #cont>div{
+            display: flex;
+            margin-bottom: 30px;
+            
+        }
+        #cont>div>div>img{
+            width: 160px;
+            height: 90px;
+        }
+        #cont>div>div>h4{
+            margin-top: 0px;
+        }
+        #cont>div>div>p{
+            margin-top: -15px;
+            
+        }
+        #cont>div>div>p:nth-child(2){
+            font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: rgb(3, 115, 98);
+            
+           
+        }
+        #cont>div>div>p:nth-child(3){
+            font-size: 12px;
+            color: #656969;
+          font-family: Georgia, Times, "Times New Roman", serif;
+           font-weight:50; 
+           margin-top: -30px;
+
+        }
+
+        #cont>div>div:nth-child(2){
+            margin-left: 20px;
+        }
+        #button>button{
+    border: none;
+    color: blue;
+    background-color: white;
+        }
+        #button>button:nth-child(1){
+            margin-left: 85%;
+        }
+        #container2{
+            text-align: center;
+        }
+        #container2>input{
+            padding: 15px;
+            width: 478px;
+            height: 15px;      
+        }
+        #container2>input:focus{
+       outline-color: blue;
+        }
+       
+        #container2>button{
+            padding: 13.5px 18.5px;
+            background-color: #464646;
+            color: white;
+        }
+        #container2>button:hover{
+            background-color:black
+        }
+        #container3{
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+            display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+       
+        }
+        #container3>div>img{
+            width: 544px;
+            height: 240px;
+        }
+        #childcontainer3{
+            border-left: 6px solid green;
+            padding-left: 10px;
+        }
+        .crousel>div{
+         display: flex;
+       
+        }
+        .crousel>div>a{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        i{
+            margin-left:10px;
+            margin-top: -40px;
+            border: 1px solid lightslategrey;
+            border-radius: 100%;
+            font-size: 10px;
+            padding: 2px;
+        }
+        i:hover{
+            font-size: 12px;
+            padding: 4px;
+            margin-top: -30px;
+            
+        }
+        hr{
+            width: 100%;
+            height: 0.1%;
+            margin: auto;
+            margin-top: 10px;
+            border: 0.1px thin lightgray;
+            margin-bottom: 30px
+        }
+        main{
+            margin-top: -32px;
+        }
+        #bottom{
+            width: 90%;
+            margin: auto;
+        }
+        #botcon{
+            width: 100%;
+            
+            display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:50px;
+
+        }
+       
+        #botcon>div>img{
+            width: 100%;
+            height: 300px;
+        }
+        .align:nth-child(1){
+            margin-left: 90%;       }
+        .align:nth-child(2){
+            margin-left: 93%;       }
+            p+p{
+                font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                color: rgb(101, 105, 105);
+            font-size: 1.2rem;
+             line-height: 1.8rem;
+            }
+            #button>.activ{
+        
+            border-bottom: 1px solid blue;
+        }
+        
+        #botcon p{
+            font-size: 12px;
+            color: #656969;
+          font-family: Georgia, Times, "Times New Roman", serif;
+           font-weight:50; 
+        }
+        #container1{
+            display: flex;
+            width: 90%;
+            margin: auto;
+            padding: 30px;
+        }
+        a{
+            text-decoration: none;
+        }
+       
+        #buttons{
+            width:20%;
+        }
+        #buttons>button{
+           
+            margin-top: 10px;
+            
+            background-color: #DBE7EF;
+            border: none;
+            padding: 6px 18px;
+            font-size: 18px;
+        }
+
+        #buttons>button:hover{
+
+            border: 1px solid blue;
+        }
+     
+        #box{
+            width: 80%;
+            margin-left: 20px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:10px;
+        }
+        #box img{
+            width: 100%;
+        }
+        #header1{
+            width: 90%;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+           
+        }
+        #header1>a{
+            margin-top: 20px;
+           
+        }
+        hr{
+            width: 90%;
+        }
+        #containerexplore{
+            width: 90%;
+            background-color: rgba(255,242,236,0.5);
+            margin: auto;
+        }
+        #buttons>.active{
+            background-color: blue;
+            color: white;
+        }
+        .idol{
+            width: 100%;
+            height: 240px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div>
+        <div id="header">
+            <h1>Publishing</h1>
+            <p>Explore how writers and publishers are using Kickstarter to bring new literature, periodicals, podcasts, and more to life.</p>
+            <a href="">Explore Journalism</a>
+            <a href="">Explore Publishing</a>
+                </div>
+    </div>
+    <div class="containerhead">
+        <div id="container">
+            <div>
+                <h3>FEATURED PROJECT</h3>
+                <img src="https://ksr-ugc.imgix.net/assets/038/344/937/b1b9593be5813c829c1ce72eff83f578_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1661081604&auto=format&frame=1&q=92&s=5e1d876fbd47cf9ebdfcc77ac38a8207" alt="">
+                <h1>Poison Apple, Villains & Creatures of Fables & Legends</h1>
+                <p>A hardcover zine & tarot deck featuring art, comics, & prose focused on the villains & creatures from fables & legends around the world</p>
+                <p>By Comics Manifest</p>
+                
+            </div>
+            
+            <div id="pagination">
+                <h3>RECOMMENDED FOR YOU</h3>
+                <div id="cont"></div>
+                <hr>
+                <div id="button"></div>
+            </div>
+        </div>
+    </div>
+
+            
+           <div class="containerhead">
+            <div id="container2">
+                <h1>Welcome to our library. Peruse the stacks with us.</h1>
+                <h3>Sign up to receive Kickstarter Reads, our Publishing, Comics, and Journalism newsletter.</h3>
+                <input type="email" placeholder="Enter email address"> 
+                <button>Subscribe</button>
+        
+            </div>
+           </div> 
+           
+      <div class="containerhead">
+        <div id="containerexplore">
+            <div id="header1"><h1>Explore Publishing</h1>
+                <a href="">Discover more</a></div>
+                <hr>
+            
+          <div id="container1">
+            
+            <div id="buttons">
+                <button class="active" id="fiction">Fiction</button>
+                <button id="children">Children's Book</button>
+                <button id="nonfiction">Nonfiction</button>
+                <button id="arts">Arts Books</button>
+                <button id="radio">Radio & Podcasts</button>
+                <button id="zines">Zines</button><br>
+                <button id="antho">Anthologies</button>
+                <button id="acadamics">Acadamics</button>
+            </div>
+            <div id="box">
+                
+            </div>
+          </div>
+        </div>
+
+      </div>     
+   <div class="containerhead">
+    <div id="container3">
+        <div><img  src="https://ksr-static.imgix.net/ZineQuest4-2022-2100x900-updated-7294ac3.png?ixlib=rb-4.0.2&s=5cba53b09e01b9a2434e18ef4d5a21fe" alt=""></div>
+        <div>
+            <div id="childcontainer3"> <h1><a href="">Welcome to Zine Quest 🐉</a></h1>
+                <p>This month, game developers will delve deep into once-forgotten lore to launch campaigns for Zine Quest. Discover their projects, which are inspired by old-school tabletop RPGs, like early D&D.</p></div>
+           
+            <a href="">Discover more</a>
+        </div>
+    </div>
+   </div>
+   <div class="containerhead">
+    <div id="container3">
+        <div>
+            <div id="childcontainer3"> 
+                <img class="idol" src="https://ksr-static.imgix.net/PublishingMilestone_HomepageModule-1204x516-b057ef6.png?ixlib=rb-2.1.0&auto=compress%2Cformat&w=1000&fit=min&s=52a1106d936d4a83eefaa7c0c3eed829" alt=""><h1>More than Two Million Backers Have Pledged $200 Million to Publishing Projects</h1>
+                <p>The category, which includes art books, literary spaces, zines, and more, is having its best-ever year—and just hit a major milestone.</p></div>
+           
+            <a href="">Discover more</a>
+        </div>
+        <div>
+            <div id="childcontainer3"> 
+                <img class="idol" src="https://ksr-static.imgix.net/milkweed-1fe9bf6.jpg?ixlib=rb-2.1.0&s=e6b83fdb7a99333dc66f51b93906fddb" alt=""><h1>117 Publishing Projects Showing What’s Possible on Kickstarter</h1>
+                <p>This month, game developers will delve deep into once-forgotten lore to launch campaigns for Zine Quest. Discover their projects, which are inspired by old-school tabletop RPGs, like early D&D.</p></div>
+           
+            <a href="">Discover more</a>
+        </div>
+    </div>
+
+   </div>
+    
+   <div class="containerhead">
+    <div class="crousel">
+        <div><h3>PUBLISHING PROJECTS WE LOVE</h3>
+        <a href="">Discover more ></a></div>
+          
+        <main>
+            
+            <span class="first">&#139;</span>
+            <span class="first">&#155;</span>
+            
+            <section>
+                <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/321/552/623696ece0f1a41a5ff697426395230f_original.jpg?ixlib=rb-4.0.2&w=680&fit=max&v=1660845818&gif-q=50&q=92&s=aec74cf45636b0bb833edc369d91fbde" alt="">
+                    <h1>Project Ironside | A $399 Extendable Board Game Table</h1>
+                    <p>Not $1999. Just $399. | Fully extendable | Larger play area | Convertible toppers | Accessories from $10 | Modern minimalist design</p></h2>
+                    <p>By 81monkeys</p>
+                </div>
+    
+                <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/156/266/6a16b853846eba5c8d07255c89a7edf4_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1659477319&auto=format&frame=1&q=92&s=02b8a9e453315022d72851aedbe9eb37" alt=""><h1>Sea of Legends: Vengeance of the Empires</h1><p>A new expansion for Sea of Legends along with a reprint of the original and expansion.</p><p>By Krystal Banner</p></div>
+    
+                <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/297/628/50fb49cbd5e08c8e05f7ef54e719ea61_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660675440&auto=format&frame=1&q=92&s=b50c06b6435ebfcf7257537df958819b" alt="">
+                    <h1>Trailblazers | Outdoor Adventure Game</h1>
+                    <p>A puzzly, portable game of hiking, biking, & kayaking built to survive the great outdoors!</p><p>By Zach Weisman</p></div>
+    
+                <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/294/480/21b6a4d4b1115ce03b71c95dbc299c7c_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660659388&auto=format&frame=1&q=92&s=8052a82df06081569ffb14b279ec97e7" alt="">
+                    <h1>This Ship Is a Tomb</h1>
+                    <p>A procedurally-generated derelict-crawl for Mothership 1E through a shifting, transdimensional vessel.</p><p>By Cowrie Games</p></div>
+                    
+                    <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/281/438/9af611c43fb3e705b590bbcc73bdfe58_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660572282&auto=format&frame=1&q=92&s=3a6b275e03a7d51bc655914870e79ff7" alt="">
+                        <h1>Sebastian Crowe's Guide to Drakkenheim</h1>
+                        <p>A players guide and sourcebook which includes brand new 5e subclasses and takes you through the world of Drakkenheim!</p><p>By Dan Blacklock of Cloud Puncher Games</p></h2>
+                    </div>
+        
+                    <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/021/590/494794ef06dd27272e0f7b2b8cdd8b50_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658350189&auto=format&frame=1&q=92&s=a69a53678ad4a4768c2f80f91f7508d9" alt=""><h1>Halls of Hegra</h1><p>From an abandoned fortress you command a group of Norwegian volunteers fighting numerically superior German forces at the start of WW2.</p><p>By Triple Topping</p></div>
+        
+                    <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/213/416/ae3a12a5bd5ed617fab272f225252a6a_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659987275&auto=format&frame=1&q=92&s=af080988e336eccd3d0e9776013c39c5" alt="">
+                        <h1>Doomensions: Pop-Up Mystery Manor</h1>
+                        <p>Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company</p><p>By Jackdaw Co</p></div>
+        
+                    <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/311/225/e9d5ef78530778b46578b6c01ec2817f_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660766465&auto=format&frame=1&q=92&s=69972284089716818088f1ce930f0007" alt="">
+                        <h1>NANOLITH - Cyberpunk RPG Board Game</h1>
+                        <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p><p>By Jim</p></div>
+                        <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/321/552/623696ece0f1a41a5ff697426395230f_original.jpg?ixlib=rb-4.0.2&w=680&fit=max&v=1660845818&gif-q=50&q=92&s=aec74cf45636b0bb833edc369d91fbde" alt="">
+                            <h1>Project Ironside | A $399 Extendable Board Game Table</h1>
+                            <p>Not $1999. Just $399. | Fully extendable | Larger play area | Convertible toppers | Accessories from $10 | Modern minimalist design</p><p>By Edaureen Muhamad Nor</p></h2>
+                        </div>
+            
+                        <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/156/266/6a16b853846eba5c8d07255c89a7edf4_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1659477319&auto=format&frame=1&q=92&s=02b8a9e453315022d72851aedbe9eb37" alt=""><h1>Sea of Legends: Vengeance of the Empires</h1><p>A new expansion for Sea of Legends along with a reprint of the original and expansion.</p><p>By Long Tail Games (Ash)</p></div>
+            
+                        <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/297/628/50fb49cbd5e08c8e05f7ef54e719ea61_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660675440&auto=format&frame=1&q=92&s=b50c06b6435ebfcf7257537df958819b" alt="">
+                            <h1>Trailblazers | Outdoor Adventure Game</h1>
+                            <p>A puzzly, portable game of hiking, biking, & kayaking built to survive the great outdoors!</p><p>By James Hanna</p></div>
+            
+                        <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/294/480/21b6a4d4b1115ce03b71c95dbc299c7c_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660659388&auto=format&frame=1&q=92&s=8052a82df06081569ffb14b279ec97e7" alt="">
+                            <h1>This Ship Is a Tomb</h1>
+                            <p>A procedurally-generated derelict-crawl for Mothership 1E through a shifting, transdimensional vessel.</p><p>By Nick Murray of Bitewing Games</p></div>
+                            
+                            <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/281/438/9af611c43fb3e705b590bbcc73bdfe58_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660572282&auto=format&frame=1&q=92&s=3a6b275e03a7d51bc655914870e79ff7" alt="">
+                                <h1>Sebastian Crowe's Guide to Drakkenheim</h1>
+                                <p>A players guide and sourcebook which includes brand new 5e subclasses and takes you through the world of Drakkenheim!</p><p>By Dungeon Dudes</p></h2>
+                            </div>
+                
+                            <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/021/590/494794ef06dd27272e0f7b2b8cdd8b50_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658350189&auto=format&frame=1&q=92&s=a69a53678ad4a4768c2f80f91f7508d9" alt=""><h1>Halls of Hegra</h1><p>From an abandoned fortress you command a group of Norwegian volunteers fighting numerically superior German forces at the start of WW2.</p><p>By Woodpecker Games</p></div>
+                
+                            <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/213/416/ae3a12a5bd5ed617fab272f225252a6a_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659987275&auto=format&frame=1&q=92&s=af080988e336eccd3d0e9776013c39c5" alt="">
+                                <h1>Doomensions: Pop-Up Mystery Manor</h1>
+                                <p>Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company</p><p>By Woodpecker Games</p></div>
+                
+                            <div class="firstCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/311/225/e9d5ef78530778b46578b6c01ec2817f_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660766465&auto=format&frame=1&q=92&s=69972284089716818088f1ce930f0007" alt="">
+                                <h1>NANOLITH - Cyberpunk RPG Board Game</h1>
+                          <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p><p>By Wraithmarked Creative</p></div>
+            </section>
+        </main>
+    </div>
+   </div>
+    <div class="containerhead">
+        <div id="bottom"><h3>MORE TO EXPLORE</h3>
+            <div id="botcon">
+                <div><img src="https://cdn.vox-cdn.com/thumbor/YNuqkWEAC1ghE1MIxqeI3bng3-M=/0x0:3000x1688/1820x1024/filters:focal(1260x604:1740x1084):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/67447853/Emere.0.jpg" alt="">
+                <h3>THE WAGADU CHRONICLES: THE AFRICAN FANTASY MMO BRINGING ROLEPLAYING BACK TO RPGS</h3>
+            <p>Firstly, the world of Wagadu removes the lens of medieval European influences in fantasy by being based entirely on African mythology. While it’s not technically the first African fantasy video game </p></div>
+            <div><img src="https://ksr-ugc.imgix.net/assets/029/815/341/e61b23f3b9a9949f76f2aad1d3e79497_original.jpg?ixlib=rb-4.0.2&w=700&fit=max&v=1594739233&gif-q=50&q=92&s=0513d75a5f7d4d9958e16c54fd2cb995" alt="">
+                <h3>THE WAGADU CHRONICLES: THE AFRICAN FANTASY MMO BRINGING ROLEPLAYING BACK TO RPGS</h3>
+            <p>Firstly, the world of Wagadu removes the lens of medieval European influences in fantasy by being based entirely on African mythology. While it’s not technically the first African fantasy video game </p></div>
+            <div><img src="https://ksr-ugc.imgix.net/assets/028/585/962/0ef15faaba8e1ef10ac99747af7ced0f_original.png?ixlib=rb-4.0.2&w=700&fit=max&v=1585665992&gif-q=50&lossless=true&s=345a8aa80b2146f912277ed777d509a4" alt="">
+                <h3>THE WAGADU CHRONICLES: THE AFRICAN FANTASY MMO BRINGING ROLEPLAYING BACK TO RPGS</h3>
+            <p>Firstly, the world of Wagadu removes the lens of medieval European influences in fantasy by being based entirely on African mythology. While it’s not technically the first African fantasy video game </p></div>
+            <div><img src="https://s3files.core77.com/blog/images/lead_n_spotlight/1018311_title__96302_kmyKkupDa.jpg" alt="">
+                <h3>THE WAGADU CHRONICLES: THE AFRICAN FANTASY MMO BRINGING ROLEPLAYING BACK TO RPGS</h3>
+            <p>Firstly, the world of Wagadu removes the lens of medieval European influences in fantasy by being based entirely on African mythology. While it’s not technically the first African fantasy video game </p></div>
+            </div>  </div>
+    </div>
+   
+    
+<div class="containerhead">
+    <div class="crousel">
+        <div><h3>TAKING OFF</h3>
+        <a href="">Discover more ></a></div>
+          
+        <main>
+            
+            <span class="second">&#139;</span>
+            <span class="second">&#155;</span>
+            
+            <section>
+                <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/321/552/623696ece0f1a41a5ff697426395230f_original.jpg?ixlib=rb-4.0.2&w=680&fit=max&v=1660845818&gif-q=50&q=92&s=aec74cf45636b0bb833edc369d91fbde" alt="">
+                    <h1>Project Ironside | A $399 Extendable Board Game Table</h1>
+                    <p>Not $1999. Just $399. | Fully extendable | Larger play area | Convertible toppers | Accessories from $10 | Modern minimalist design</p></h2>
+                    <p>By 81monkeys</p>
+                </div>
+    
+                <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/156/266/6a16b853846eba5c8d07255c89a7edf4_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1659477319&auto=format&frame=1&q=92&s=02b8a9e453315022d72851aedbe9eb37" alt=""><h1>Sea of Legends: Vengeance of the Empires</h1><p>A new expansion for Sea of Legends along with a reprint of the original and expansion.</p><p>By Krystal Banner</p></div>
+    
+                <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/297/628/50fb49cbd5e08c8e05f7ef54e719ea61_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660675440&auto=format&frame=1&q=92&s=b50c06b6435ebfcf7257537df958819b" alt="">
+                    <h1>Trailblazers | Outdoor Adventure Game</h1>
+                    <p>A puzzly, portable game of hiking, biking, & kayaking built to survive the great outdoors!</p><p>By Zach Weisman</p></div>
+    
+                <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/294/480/21b6a4d4b1115ce03b71c95dbc299c7c_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660659388&auto=format&frame=1&q=92&s=8052a82df06081569ffb14b279ec97e7" alt="">
+                    <h1>This Ship Is a Tomb</h1>
+                    <p>A procedurally-generated derelict-crawl for Mothership 1E through a shifting, transdimensional vessel.</p><p>By Cowrie Games</p></div>
+                    
+                    <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/281/438/9af611c43fb3e705b590bbcc73bdfe58_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660572282&auto=format&frame=1&q=92&s=3a6b275e03a7d51bc655914870e79ff7" alt="">
+                        <h1>Sebastian Crowe's Guide to Drakkenheim</h1>
+                        <p>A players guide and sourcebook which includes brand new 5e subclasses and takes you through the world of Drakkenheim!</p><p>By Dan Blacklock of Cloud Puncher Games</p></h2>
+                    </div>
+        
+                    <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/021/590/494794ef06dd27272e0f7b2b8cdd8b50_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658350189&auto=format&frame=1&q=92&s=a69a53678ad4a4768c2f80f91f7508d9" alt=""><h1>Halls of Hegra</h1><p>From an abandoned fortress you command a group of Norwegian volunteers fighting numerically superior German forces at the start of WW2.</p><p>By Triple Topping</p></div>
+        
+                    <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/213/416/ae3a12a5bd5ed617fab272f225252a6a_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659987275&auto=format&frame=1&q=92&s=af080988e336eccd3d0e9776013c39c5" alt="">
+                        <h1>Doomensions: Pop-Up Mystery Manor</h1>
+                        <p>Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company</p><p>By Jackdaw Co</p></div>
+        
+                    <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/311/225/e9d5ef78530778b46578b6c01ec2817f_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660766465&auto=format&frame=1&q=92&s=69972284089716818088f1ce930f0007" alt="">
+                        <h1>NANOLITH - Cyberpunk RPG Board Game</h1>
+                        <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p><p>By Jim</p></div>
+                        <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/321/552/623696ece0f1a41a5ff697426395230f_original.jpg?ixlib=rb-4.0.2&w=680&fit=max&v=1660845818&gif-q=50&q=92&s=aec74cf45636b0bb833edc369d91fbde" alt="">
+                            <h1>Project Ironside | A $399 Extendable Board Game Table</h1>
+                            <p>Not $1999. Just $399. | Fully extendable | Larger play area | Convertible toppers | Accessories from $10 | Modern minimalist design</p><p>By Edaureen Muhamad Nor</p></h2>
+                        </div>
+            
+                        <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/156/266/6a16b853846eba5c8d07255c89a7edf4_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1659477319&auto=format&frame=1&q=92&s=02b8a9e453315022d72851aedbe9eb37" alt=""><h1>Sea of Legends: Vengeance of the Empires</h1><p>A new expansion for Sea of Legends along with a reprint of the original and expansion.</p><p>By Long Tail Games (Ash)</p></div>
+            
+                        <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/297/628/50fb49cbd5e08c8e05f7ef54e719ea61_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660675440&auto=format&frame=1&q=92&s=b50c06b6435ebfcf7257537df958819b" alt="">
+                            <h1>Trailblazers | Outdoor Adventure Game</h1>
+                            <p>A puzzly, portable game of hiking, biking, & kayaking built to survive the great outdoors!</p><p>By James Hanna</p></div>
+            
+                        <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/294/480/21b6a4d4b1115ce03b71c95dbc299c7c_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660659388&auto=format&frame=1&q=92&s=8052a82df06081569ffb14b279ec97e7" alt="">
+                            <h1>This Ship Is a Tomb</h1>
+                            <p>A procedurally-generated derelict-crawl for Mothership 1E through a shifting, transdimensional vessel.</p><p>By Nick Murray of Bitewing Games</p></div>
+                            
+                            <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/281/438/9af611c43fb3e705b590bbcc73bdfe58_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660572282&auto=format&frame=1&q=92&s=3a6b275e03a7d51bc655914870e79ff7" alt="">
+                                <h1>Sebastian Crowe's Guide to Drakkenheim</h1>
+                                <p>A players guide and sourcebook which includes brand new 5e subclasses and takes you through the world of Drakkenheim!</p><p>By Dungeon Dudes</p></h2>
+                            </div>
+                
+                            <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/021/590/494794ef06dd27272e0f7b2b8cdd8b50_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658350189&auto=format&frame=1&q=92&s=a69a53678ad4a4768c2f80f91f7508d9" alt=""><h1>Halls of Hegra</h1><p>From an abandoned fortress you command a group of Norwegian volunteers fighting numerically superior German forces at the start of WW2.</p><p>By Woodpecker Games</p></div>
+                
+                            <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/213/416/ae3a12a5bd5ed617fab272f225252a6a_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659987275&auto=format&frame=1&q=92&s=af080988e336eccd3d0e9776013c39c5" alt="">
+                                <h1>Doomensions: Pop-Up Mystery Manor</h1>
+                                <p>Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company</p><p>By Woodpecker Games</p></div>
+                
+                            <div class="secondCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/311/225/e9d5ef78530778b46578b6c01ec2817f_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660766465&auto=format&frame=1&q=92&s=69972284089716818088f1ce930f0007" alt="">
+                                <h1>NANOLITH - Cyberpunk RPG Board Game</h1>
+                          <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p><p>By Wraithmarked Creative</p></div>
+            </section>
+        </main>
+    </div>
+</div>
+        
+        <div class="containerhead">
+            <div class="crousel">
+                <div><h3>HOME STRETCH</h3>
+                <a href="">Discover more ></a></div>
+                  
+                <main>
+                    
+                    <span class="third">&#139;</span>
+                    <span class="third">&#155;</span>
+                    
+                    <section>
+                        <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/321/552/623696ece0f1a41a5ff697426395230f_original.jpg?ixlib=rb-4.0.2&w=680&fit=max&v=1660845818&gif-q=50&q=92&s=aec74cf45636b0bb833edc369d91fbde" alt="">
+                            <h1>Project Ironside | A $399 Extendable Board Game Table</h1>
+                            <p>Not $1999. Just $399. | Fully extendable | Larger play area | Convertible toppers | Accessories from $10 | Modern minimalist design</p></h2>
+                            <p>By 81monkeys</p>
+                        </div>
+            
+                        <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/156/266/6a16b853846eba5c8d07255c89a7edf4_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1659477319&auto=format&frame=1&q=92&s=02b8a9e453315022d72851aedbe9eb37" alt=""><h1>Sea of Legends: Vengeance of the Empires</h1><p>A new expansion for Sea of Legends along with a reprint of the original and expansion.</p><p>By Krystal Banner</p></div>
+            
+                        <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/297/628/50fb49cbd5e08c8e05f7ef54e719ea61_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660675440&auto=format&frame=1&q=92&s=b50c06b6435ebfcf7257537df958819b" alt="">
+                            <h1>Trailblazers | Outdoor Adventure Game</h1>
+                            <p>A puzzly, portable game of hiking, biking, & kayaking built to survive the great outdoors!</p><p>By Zach Weisman</p></div>
+            
+                        <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/294/480/21b6a4d4b1115ce03b71c95dbc299c7c_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660659388&auto=format&frame=1&q=92&s=8052a82df06081569ffb14b279ec97e7" alt="">
+                            <h1>This Ship Is a Tomb</h1>
+                            <p>A procedurally-generated derelict-crawl for Mothership 1E through a shifting, transdimensional vessel.</p><p>By Cowrie Games</p></div>
+                            
+                            <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/281/438/9af611c43fb3e705b590bbcc73bdfe58_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660572282&auto=format&frame=1&q=92&s=3a6b275e03a7d51bc655914870e79ff7" alt="">
+                                <h1>Sebastian Crowe's Guide to Drakkenheim</h1>
+                                <p>A players guide and sourcebook which includes brand new 5e subclasses and takes you through the world of Drakkenheim!</p><p>By Dan Blacklock of Cloud Puncher Games</p></h2>
+                            </div>
+                
+                            <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/021/590/494794ef06dd27272e0f7b2b8cdd8b50_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658350189&auto=format&frame=1&q=92&s=a69a53678ad4a4768c2f80f91f7508d9" alt=""><h1>Halls of Hegra</h1><p>From an abandoned fortress you command a group of Norwegian volunteers fighting numerically superior German forces at the start of WW2.</p><p>By Triple Topping</p></div>
+                
+                            <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/213/416/ae3a12a5bd5ed617fab272f225252a6a_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659987275&auto=format&frame=1&q=92&s=af080988e336eccd3d0e9776013c39c5" alt="">
+                                <h1>Doomensions: Pop-Up Mystery Manor</h1>
+                                <p>Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company</p><p>By Jackdaw Co</p></div>
+                
+                            <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/311/225/e9d5ef78530778b46578b6c01ec2817f_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660766465&auto=format&frame=1&q=92&s=69972284089716818088f1ce930f0007" alt="">
+                                <h1>NANOLITH - Cyberpunk RPG Board Game</h1>
+                                <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p><p>By Jim</p></div>
+                                <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/321/552/623696ece0f1a41a5ff697426395230f_original.jpg?ixlib=rb-4.0.2&w=680&fit=max&v=1660845818&gif-q=50&q=92&s=aec74cf45636b0bb833edc369d91fbde" alt="">
+                                    <h1>Project Ironside | A $399 Extendable Board Game Table</h1>
+                                    <p>Not $1999. Just $399. | Fully extendable | Larger play area | Convertible toppers | Accessories from $10 | Modern minimalist design</p><p>By Edaureen Muhamad Nor</p></h2>
+                                </div>
+                    
+                                <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/156/266/6a16b853846eba5c8d07255c89a7edf4_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1659477319&auto=format&frame=1&q=92&s=02b8a9e453315022d72851aedbe9eb37" alt=""><h1>Sea of Legends: Vengeance of the Empires</h1><p>A new expansion for Sea of Legends along with a reprint of the original and expansion.</p><p>By Long Tail Games (Ash)</p></div>
+                    
+                                <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/297/628/50fb49cbd5e08c8e05f7ef54e719ea61_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660675440&auto=format&frame=1&q=92&s=b50c06b6435ebfcf7257537df958819b" alt="">
+                                    <h1>Trailblazers | Outdoor Adventure Game</h1>
+                                    <p>A puzzly, portable game of hiking, biking, & kayaking built to survive the great outdoors!</p><p>By James Hanna</p></div>
+                    
+                                <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/294/480/21b6a4d4b1115ce03b71c95dbc299c7c_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660659388&auto=format&frame=1&q=92&s=8052a82df06081569ffb14b279ec97e7" alt="">
+                                    <h1>This Ship Is a Tomb</h1>
+                                    <p>A procedurally-generated derelict-crawl for Mothership 1E through a shifting, transdimensional vessel.</p><p>By Nick Murray of Bitewing Games</p></div>
+                                    
+                                    <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/281/438/9af611c43fb3e705b590bbcc73bdfe58_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660572282&auto=format&frame=1&q=92&s=3a6b275e03a7d51bc655914870e79ff7" alt="">
+                                        <h1>Sebastian Crowe's Guide to Drakkenheim</h1>
+                                        <p>A players guide and sourcebook which includes brand new 5e subclasses and takes you through the world of Drakkenheim!</p><p>By Dungeon Dudes</p></h2>
+                                    </div>
+                        
+                                    <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/021/590/494794ef06dd27272e0f7b2b8cdd8b50_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658350189&auto=format&frame=1&q=92&s=a69a53678ad4a4768c2f80f91f7508d9" alt=""><h1>Halls of Hegra</h1><p>From an abandoned fortress you command a group of Norwegian volunteers fighting numerically superior German forces at the start of WW2.</p><p>By Woodpecker Games</p></div>
+                        
+                                    <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/213/416/ae3a12a5bd5ed617fab272f225252a6a_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659987275&auto=format&frame=1&q=92&s=af080988e336eccd3d0e9776013c39c5" alt="">
+                                        <h1>Doomensions: Pop-Up Mystery Manor</h1>
+                                        <p>Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company</p><p>By Woodpecker Games</p></div>
+                        
+                                    <div class="thirdCrousel"><img src="https://ksr-ugc.imgix.net/assets/038/311/225/e9d5ef78530778b46578b6c01ec2817f_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660766465&auto=format&frame=1&q=92&s=69972284089716818088f1ce930f0007" alt="">
+                                        <h1>NANOLITH - Cyberpunk RPG Board Game</h1>
+                                  <p>1-4 awakened heroes retrieve their dark memories in this J-RPG co-op, legacy, skirmish & story based board game. The Nanolith awaits</p><p>By Wraithmarked Creative</p></div>
+                    </section>
+                </main>
+            </div>
+        </div>
+        
+        <div id="Bottom">
+
+            <div id="bottom1">
+              <a id="com" href="">Art</a>
+              <a id="com" href="">Comics & illustration</a>
+              <a id="com" href="">Design & Tech</a>
+              <a id="com" href="">Film</a>
+              <a id="com" href="">Food & Craft</a>
+              <a id="com" href="">Games</a>
+              <a id="com" href="">Music</a> 
+              <a id="com" href="">Publishing</a>
+          </div>
+          
+          </div>
+          
+          
+          
+          <div id="bottom2">
+                <div id="bottom2-1">
+          
+                   <div id="bot1">
+                    <p id="about">ABOUT</p>
+                    <p class="stats" >About us</p>
+                    <p class="stats">Our charter</p>
+                    <p class="stats">Stats</p>
+                    <p class="stats">Press</p>
+                    <p class="stats">Jobs</p>
+                   </div>
+          
+                   <div id="bot2">
+                    <p id="about">SUPPORT</p>
+                    <p class="stats">Help Center</p>
+                    <p class="stats">Our Rules</p>
+                    <p class="stats">Creator Resourses</p>
+                    <p class="stats">Forward Funds</p>
+                    <p class="stats">Brand assests</p>
+                   </div>
+           
+          
+                   <div id="bot3">
+                    <p id="about">MORE FROM KICKSTARTER</p>
+                    <p class="stats" >Newsletters</p>
+                    <p class="stats" >Kickstarter Magazine</p>
+                    <p class="stats" >The Creative Independent</p>
+                    <p class="stats" >Mobile apps</p>
+                    <p class="stats" >Research</p>
+                   </div>
+                 
+          
+                </div>
+        
+                <div id="bottom-logo">
+                  <div>
+                  <img id="lastlogo" src="https://cdn-icons-png.flaticon.com/512/733/733615.png" alt="">
+          
+                  <span id="lastp">Kickstarter, PBC @ 2022</span>
+        
+                  </div>
+        
+                  <div id="lang-curr">
+                    <img id="face" src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="">
+                    <img id="face" src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png" alt="">
+                    <img id="face" src="https://cdn-icons-png.flaticon.com/128/733/733635.png" alt="">
+                    <img id="face" src="https://cdn-icons-png.flaticon.com/128/1384/1384028.png" alt="">
+                   
+                    <select name="" id="lang">
+                      <option value="English">English</option>
+                      <option value="Deotsch">Deotsch</option>
+                      <option value="Espan">Espanol</option>
+                      <option value="Francias">Francias</option>
+                      <option value="italiano">Italiano</option>
+                    </select>
+              
+                    <select name="" id="currency">
+                      <option value="usd">$ US Doller (USD)</option>
+                      <option value="eur">Euro (EUR)</option>
+                      <option value="aus">$ Austalian Doller (USD)</option>
+                      <option value="frs">Fr Swiss France (CHF)</option>
+                      <option value="KRK">Kr Danish krone (DKK)</option>
+                      <option value="hong">$ Hong Kong Doller (HKD)</option>
+                      <option value="new">$ New Zealand Doller (NGD) </option>
+                      <option value="sing">$ Singpore (SGD)</option>
+                      <option value="mxn"> $ Maxican Peso (MXN)</option>
+                    </select>
+         
+                  </div>
+                  
+             
+                  
+                  
+                </div>
+            
+              
+          
+          </div>
+          
+          
+         
+          
+          <div id="Bottom">
+          
+            <div id="bottom1">
+              <a id="com" href="">Trust & Safety</a>
+              <a id="com" href="">Terms of Use</a>
+              <a id="com" href="">Privacy Policy</a>
+              <a id="com" href="">Cookie Policy</a>
+              <a id="com" href="">Accessibility Statement</a>
+              <a id="com" href="">CA Notice of Contest</a>
+          
+          </div>
+          
+          </div>
+
+</body>
+</html>
+<script src='publisher.js' type="module">
+    
+</script>
