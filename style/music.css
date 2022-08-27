@@ -236,6 +236,7 @@ color: white;
 .corner{
 width:90%;
 margin:auto;
+margin-bottom: 40px;
 }
 .corner>div:first-child{
 height:60px;
