@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Film</title>
   
+    <link rel="stylesheet" href="./styles/nav.css">
+
     <link rel="stylesheet" href="./styles/film.css" />
 
     <link
@@ -841,6 +843,12 @@ The Kickstarter Creator Handbook</h3>
   });
 </script>
 
+<script type="module">
 
+  import navbar from './Components/navbar.js'
+
+  let nav_container=document.getElementById('nav_container')
+  nav_container.innerHTML=navbar();
+</script>
 
 <script src="./film.js"></script>

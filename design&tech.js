@@ -541,50 +541,51 @@ tabs.forEach((tab,index)=>{
 
 
 let recommendedArr=[{
-    img:"https://ksr-ugc.imgix.net/assets/038/175/201/78e277ef22b423f4f9235d29660091fa_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659623186&auto=format&frame=1&q=92&s=3822d4ed05556c733ff5f0875226a242",
+    img:"https://ksr-ugc.imgix.net/assets/038/069/397/4cb3fbba5ea235d1de70afde77cc6268_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658792407&auto=format&frame=1&q=92&s=3ad6002098fcb63ada9ab1a4d3e6f1c8",
     title:`BRUTTA FIGURA`,
     percent:"160% funded",
     by:"By Giorgio Arcelli Fontana"
     },
-   {img:"https://ksr-ugc.imgix.net/assets/038/294/590/09ad09509b996f0785c0ef53afc4db76_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660660067&auto=format&frame=1&q=92&s=b8a636b8ccdc2dba78858e8894433a9b",
+   {img:"https://ksr-ugc.imgix.net/assets/038/362/897/84f0f33c714d5b83b6c9ec5a66ad89d9_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1661236192&auto=format&frame=1&q=92&s=f50550e6ced818dfcb0ae24cabb57a8e",
     title:`Magic: The Gathering Documentary - Igniting the Spark`,
     percent:"71% funded",
     by:"By Cavegirl Productions"},{
-    img:"https://ksr-ugc.imgix.net/assets/036/665/709/122041ed4e7d37e267d067d6e2ad6669_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1647364548&auto=format&frame=1&q=92&s=b3fa156dbba450767dfd87d2da2101e8",
+    img:"https://ksr-ugc.imgix.net/assets/038/289/048/874c3585a672b464a83ee5e04f2ba3e9_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660620647&auto=format&frame=1&q=92&s=725e9849080dafcb98eba6a3fb34bce9",
     title:`Behind the Smile Documentary`,
     percent:"103% funded",
     by:"By Lacey Darlene Paulson"
     },
-    {img:"https://ksr-ugc.imgix.net/assets/038/017/409/403855f86f3f0495df0c0b4a85993713_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658325924&auto=format&frame=1&q=92&s=e0c77d9b0322512f942bb786e2b13c8a",
+    {img:"https://ksr-ugc.imgix.net/assets/038/301/086/bb2de7adce555197e07a63eabaa62357_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660698389&auto=format&frame=1&q=92&s=08b380d7a8954f88b42b1d6f8add0ba2",
     title:`Morris Code`,
     percent:"40% funded",
     by:"By Rhett Rossi"},
     
     {
-    img:"https://ksr-ugc.imgix.net/assets/037/946/341/d9d2b3ae46060712a467d5b6b5020938_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657732933&auto=format&frame=1&q=92&s=d49c5d5b33bf4f61027eae9d4e11ba99",
+    img:"https://ksr-ugc.imgix.net/assets/038/065/741/fe8f12100312120e7e309ea53661a3a3_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658768795&auto=format&frame=1&q=92&s=0e1c6b29bf16ad1b1da6a5ac41979bdb",
     title:`PLACES WE KNEW - A Japanese American Short Film`,
     percent:"65% funded",
     by:"By Oliver William Staton"
     },
-   {img:"https://ksr-ugc.imgix.net/assets/037/876/068/e86b68eacc49f7345ff8cd705689da9e_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657136595&auto=format&frame=1&q=92&s=b7f9f30acf3fb2a01de598ab56d447c8",
+   {img:"https://ksr-ugc.imgix.net/assets/038/099/420/909b374ee53ce08c617e5674e19d0c9e_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659012045&auto=format&frame=1&q=92&s=5171e9a94bb414b67d74bafd4f1b7c88",
     title:`S.T.A.L.K.E.R. | Shadow of the Zone`,
     percent:"353% funded",
     by:"By Stephen Hancock"},
     {
-    img:"https://ksr-ugc.imgix.net/assets/037/855/310/00d33fb882de06e2ead187e0e0795af8_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657001972&auto=format&frame=1&q=92&s=29a7f8f7c83af02a356b1d7f2813f788",
+    img:"https://ksr-ugc.imgix.net/assets/038/310/858/32b29cbe1b145a3af4150161176858d2_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660763905&auto=format&frame=1&q=92&s=04fad2cb7f3ccdd64ce13560589f8b94",
     title:`The Roots of Evil`,
     percent:"788% funded",
     by:"By Uncanny Pictures"
     },
-    {img:"https://ksr-ugc.imgix.net/assets/038/021/098/fdcf6ecb1b3e3cef68613d5dc28bd190_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658347006&auto=format&frame=1&q=92&s=d17c5399fa46dcbf4ca9838cc8dac130",
-    title:`
-    Silent Dreams: A film from Bhutan`,
-    percent:"102% funded",
-    by:"By Fora Films"},
-    {img:"https://ksr-ugc.imgix.net/assets/037/878/138/0eb997c2c1c0bf9e94bfa5e8e9651f88_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657150208&auto=format&frame=1&q=92&s=82170937ed0c366d4fe9934124ec24be",
-    title:`STEWART UDALL and the Politics of Beauty: Finishing Funds`,
-    percent:"72% funded",
-    by:"By John de Graaf"}]
+    {
+        img:"https://ksr-ugc.imgix.net/assets/038/069/397/4cb3fbba5ea235d1de70afde77cc6268_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658792407&auto=format&frame=1&q=92&s=3ad6002098fcb63ada9ab1a4d3e6f1c8",
+        title:`BRUTTA FIGURA`,
+        percent:"160% funded",
+        by:"By Giorgio Arcelli Fontana"
+        },
+    {img:"https://ksr-ugc.imgix.net/assets/038/301/086/bb2de7adce555197e07a63eabaa62357_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660698389&auto=format&frame=1&q=92&s=08b380d7a8954f88b42b1d6f8add0ba2",
+    title:`Morris Code`,
+    percent:"40% funded",
+    by:"By Rhett Rossi"},]
   
     
   
