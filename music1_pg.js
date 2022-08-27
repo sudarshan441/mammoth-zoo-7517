@@ -151,56 +151,56 @@
       ]
       console.log(arr2.length)
       
-      appendata(arr2,0,3);
+      appendataA(arr2,0,3);
       
-      function appendata(data,start,end){
+      function appendataA(data1,start1,end1){
       document.getElementById("box").innerHTML=null;
       
       
-      for(let i=start; i<end; i++){
+      for(let i=start1; i<end1; i++){
         
-        let div=document.createElement("div");
-        let img=document.createElement("img");
-        img.src=data[i].img;
+        let div1=document.createElement("div");
+        let img1=document.createElement("img");
+        img1.src=data1[i].img;
         
-        let title=document.createElement("h4");
-        title.innerText=data[i].title;
-        let para=document.createElement("p");
-        para.innerText=data[i].para;
-        let by=document.createElement("p");
-        by.innerText=data[i].by;
+        let title1=document.createElement("h4");
+        title1.innerText=data1[i].title;
+        let para1=document.createElement("p");
+        para1.innerText=data1[i].para;
+        let by1=document.createElement("p");
+        by1.innerText=data1[i].by;
       
       
-        div.append(img,title,para,by)
-      document.getElementById("box").append(div);
+        div1.append(img1,title1,para1,by1)
+      document.getElementById("box").append(div1);
       
       }
        }
        document.querySelector("#pop").addEventListener("click",function(){
        
-        appendata(arr2,3,6);
+        appendataA(arr2,3,6);
       
        })
        document.querySelector("#cout").addEventListener("click",function(){
-        appendata(arr2,6,9);
+        appendataA(arr2,6,9);
        })
        document.querySelector("#clas").addEventListener("click",function(){
-        appendata(arr2,9,12);
+        appendataA(arr2,9,12);
        })
        document.querySelector("#rock").addEventListener("click",function(){
-        appendata(arr2,12,15);
+        appendataA(arr2,12,15);
        })
        document.querySelector("#indi").addEventListener("click",function(){
-        appendata(arr2,15,18);
+        appendataA(arr2,15,18);
        })
        document.querySelector("#jaz").addEventListener("click",function(){
-        appendata(arr2,18,21);
+        appendataA(arr2,18,21);
        })
        document.querySelector("#worl").addEventListener("click",function(){
-        appendata(arr2,21,24);
+        appendataA(arr2,21,24);
        })
        document.querySelector("#hip").addEventListener("click",function(){
-        appendata(arr2,15,18);
+        appendataA(arr2,15,18);
        })
       
        let tabs=document.querySelectorAll("#btn>button")
