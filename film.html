@@ -12,6 +12,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
   </head>
   <body>
     <div id="nav_container"></div>
@@ -37,8 +40,15 @@
           A live-action sci-fi short fan-film based on the S.T.A.L.K.E.R.
           video-game series.
         </p>
-
         <p id="director">By Stephen Hancock</p>
+<div id="social">
+  <button><img src="./icons/icons8-bookmark-32.png" alt="">
+  </button>
+        <button><img src="./icons/icons8-facebook-like-32.png" alt=""></button>
+        <button><img src="./icons/icons8-thumbs-down-32.png" alt=""></button>
+
+</div>
+        
       </div>
 
       <div id="recommended-movie">
@@ -59,16 +69,18 @@
       <button id="subscribe-btn">Subscribe</button>
     </div>
 
+    <!-- Shorts -->
+
     <div id="shorts">
       <div class="short-heading">
         <div>
           <span class="small-heading">SHORTS</span>
-          <a href="#" class="small-links">Discover more ></a>
+          <a href="#" class="small-links">Discover more <i class="fa-solid fa-angle-right"></i></a>
         </div>
 
         <div>
-          <button class="pre"><</button>
-          <button class="next">></button>
+          <button class="pre"><i class="fa-solid fa-angle-left"></i></button>
+          <button class="next"><i class="fa-solid fa-angle-right"></i></button>
         </div>
       </div>
 
@@ -77,16 +89,18 @@
       </div>
     </div>
 
+    <!-- Home Stretch -->
+
     <div id="shorts">
       <div class="short-heading">
         <div>
           <span class="small-heading">HOME STRETCH</span>
-          <a href="#" class="small-links">Discover more ></a>
+          <a href="#" class="small-links">Discover more <i class="fa-solid fa-angle-right"></i></a>
         </div>
 
         <div>
-          <button class="pre1"><</button>
-          <button class="next1">></button>
+          <button class="pre1"><i class="fa-solid fa-angle-left"></i></button>
+          <button class="next1"><i class="fa-solid fa-angle-right"></i></button>
         </div>
       </div>
 
@@ -95,11 +109,13 @@
       </div>
     </div>
 
+    <!-- Explore film -->
+
     <div id="explore">
       <div id="explore_film">
         <div id="explore-head">
           <h3>Explore Film & Video</h3>
-          <a href="#" class="small-links">Discover more</a>
+          <a href="#" class="small-links">Discover more <i class="fa-solid fa-angle-right"></i></a>
         </div>
 
         <div id="tabs-container">
@@ -114,6 +130,8 @@
             <button>Thrillers</button><br />
           </div>
           <div class="tab-content">
+
+            <!-- Shorts -->
             <div class="active m">
               <div class="explore-list">
                 <div class="explore-slide">
@@ -152,7 +170,7 @@
                 </div>
               </div>
             </div>
-
+                   <!-- Documentories -->
             <div class="m">
               <div class="explore-list">
                 <div class="explore-slide">
@@ -199,35 +217,33 @@
               </div>
             </div>
 
+            <!-- Drama -->
+
             <div class="m">
               <div class="explore-list">
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/038/294/590/09ad09509b996f0785c0ef53afc4db76_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660660067&auto=format&frame=1&q=92&s=b8a636b8ccdc2dba78858e8894433a9b"
+                    src="https://ksr-ugc.imgix.net/assets/037/832/899/5683fb474dc922d09325ccb1ab8fd028_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656774411&auto=format&frame=1&q=92&s=f81bb19c311abc9359e41381111f74ed"
                     alt=""
                   />
-                  <h3>Magic: The Gathering Documentary - Igniting the Spark</h3>
+                  <h3>Take Me Home</h3>
                   <p>
-                    A feature-length documentary exploring Magic's 30-year
-                    history & transformation from a “simple” card game into
-                    pop-culture juggernaut
+                    A short film about family, disability and communication.
                   </p>
-                  <span>By Cavegirl Productions</span>
+                  <span>By Liz Sargent</span>
                 </div>
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/037/878/138/0eb997c2c1c0bf9e94bfa5e8e9651f88_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657150208&auto=format&frame=1&q=92&s=82170937ed0c366d4fe9934124ec24be"
+                    src="https://ksr-ugc.imgix.net/assets/037/483/594/2a22a2b798c3089baec923152800e63d_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1653934085&auto=format&frame=1&q=92&s=eb7a03386e19f310638e8aaae1befcad"
                     alt=""
                   />
                   <h3>
-                    STEWART UDALL and the Politics of Beauty: Finishing Funds.
+                    REGINA "LA MUJER QUE SALVÓ A MÉXICO"
                   </h3>
                   <p>
-                    John de Graaf's feature-length documentary on the
-                    inspirational life, achievements, and lasting environmental
-                    impact of Stewart Udall.
+                    Un país a punto del morir y una mujer que luchará contra las fuerzas mas poderosas del universo... ¡para salvarlo!
                   </p>
-                  <span>By John de Graaf</span>
+                  <span>By José Gerardo Ocampo</span>
                 </div>
                 <div class="explore-slide">
                   <img
@@ -245,11 +261,55 @@
               </div>
             </div>
 
+            <!-- Horror -->
+
             <div class="m">
               <div class="explore-list">
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/038/294/590/09ad09509b996f0785c0ef53afc4db76_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660660067&auto=format&frame=1&q=92&s=b8a636b8ccdc2dba78858e8894433a9b"
+                    src="https://ksr-ugc.imgix.net/assets/038/377/772/7e8b7dae1d3efbd4ba74069a25a1fb9f_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1661348899&auto=format&frame=1&q=92&s=5c14eb70faaffc694f638a41e8a4ad83"
+                    alt=""
+                  />
+                  <h3>The Magician - New 4K restoration and blu-ray</h3>
+                  <p>
+                    New limited blu-ray of the silent 1926 classic "The Magician". New 4K restoration and soundtrack
+                  </p>
+                  <span>By Redwood Creek Films</span>
+                </div>
+                <div class="explore-slide">
+                  <img
+                    src="https://ksr-ugc.imgix.net/assets/038/308/935/9d97ca26890939f8ad144c7d65323e6b_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660752552&auto=format&frame=1&q=92&s=49b4900814230003beeb92b1392e9cfe"
+                    alt=""
+                  />
+                  <h3>
+                    Malum Somnium (Bad Dream)
+                  </h3>
+                  <p>
+                    An independent film project aiming to be screened in film festivals and to be released onto online platforms.
+                  </p>
+                  <span>By Ralph Clarence Bersamin</span>
+                </div>
+                <div class="explore-slide">
+                  <img
+                    src="https://ksr-ugc.imgix.net/assets/036/639/237/0eab40145760bd35d432410f1ea3826d_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1647140919&auto=format&frame=1&q=92&s=0a772a79ab65553f4a99ebd047854654"
+                    alt=""
+                  />
+                  <h3>The Sharp Fangs</h3>
+                  <p>
+                    The Diary of a Werewolf.
+                  </p>
+                  <span>By Edgar I Garcia</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Animation -->
+
+            <div class="m">
+              <div class="explore-list">
+                <div class="explore-slide">
+                  <img
+                    src="https://ksr-ugc.imgix.net/assets/037/944/154/604fd18e0b1f4acc10f4eb2446eedc02_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657721601&auto=format&frame=1&q=92&s=c128ad7cd2e27735c0b5b13a2595de20"
                     alt=""
                   />
                   <h3>Magic: The Gathering Documentary - Igniting the Spark</h3>
@@ -262,7 +322,7 @@
                 </div>
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/037/878/138/0eb997c2c1c0bf9e94bfa5e8e9651f88_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657150208&auto=format&frame=1&q=92&s=82170937ed0c366d4fe9934124ec24be"
+                    src="https://ksr-ugc.imgix.net/assets/037/847/884/c020e085090fdb3baa2072853d9bc08c_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656938643&auto=format&frame=1&q=92&s=5d8d02f263a43628a930365e08f5d179"
                     alt=""
                   />
                   <h3>
@@ -277,7 +337,7 @@
                 </div>
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/036/665/709/122041ed4e7d37e267d067d6e2ad6669_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1647364548&auto=format&frame=1&q=92&s=b3fa156dbba450767dfd87d2da2101e8"
+                    src="https://ksr-ugc.imgix.net/assets/037/843/051/14b501906301390eb4897da770739caa_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656891218&auto=format&frame=1&q=92&s=a034927535081eeee81683c1a5675ad6"
                     alt=""
                   />
                   <h3>Behind the Smile Documentary.</h3>
@@ -291,11 +351,13 @@
               </div>
             </div>
 
+            <!-- Narrative -->
+
             <div class="m">
               <div class="explore-list">
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/038/294/590/09ad09509b996f0785c0ef53afc4db76_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660660067&auto=format&frame=1&q=92&s=b8a636b8ccdc2dba78858e8894433a9b"
+                    src="https://ksr-ugc.imgix.net/assets/038/021/098/fdcf6ecb1b3e3cef68613d5dc28bd190_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658347006&auto=format&frame=1&q=92&s=d17c5399fa46dcbf4ca9838cc8dac130"
                     alt=""
                   />
                   <h3>Magic: The Gathering Documentary - Igniting the Spark</h3>
@@ -308,7 +370,7 @@
                 </div>
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/037/878/138/0eb997c2c1c0bf9e94bfa5e8e9651f88_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657150208&auto=format&frame=1&q=92&s=82170937ed0c366d4fe9934124ec24be"
+                    src="https://ksr-ugc.imgix.net/assets/038/241/867/cd9240e1e09ecab17fb983629e034d06_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660198768&auto=format&frame=1&q=92&s=4e8ee0ec4e334bf31c38c4b82ccac1f5"
                     alt=""
                   />
                   <h3>
@@ -323,7 +385,7 @@
                 </div>
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/036/665/709/122041ed4e7d37e267d067d6e2ad6669_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1647364548&auto=format&frame=1&q=92&s=b3fa156dbba450767dfd87d2da2101e8"
+                    src="https://ksr-ugc.imgix.net/assets/038/196/402/d83a301e93c120369517ee5546aef4e7_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659815556&auto=format&frame=1&q=92&s=487632cabf082dd74e344c5289332a16"
                     alt=""
                   />
                   <h3>Behind the Smile Documentary.</h3>
@@ -337,11 +399,13 @@
               </div>
             </div>
 
+            <!-- Comedy -->
+
             <div class="m">
               <div class="explore-list">
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/038/294/590/09ad09509b996f0785c0ef53afc4db76_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660660067&auto=format&frame=1&q=92&s=b8a636b8ccdc2dba78858e8894433a9b"
+                    src="https://ksr-ugc.imgix.net/assets/037/194/433/bae87f0a86a44c9d188343cefa5cee37_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1651686589&auto=format&frame=1&q=92&s=0e2d93565bae8876ef9c63bab1b4ff0e"
                     alt=""
                   />
                   <h3>Magic: The Gathering Documentary - Igniting the Spark</h3>
@@ -354,7 +418,7 @@
                 </div>
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/037/878/138/0eb997c2c1c0bf9e94bfa5e8e9651f88_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657150208&auto=format&frame=1&q=92&s=82170937ed0c366d4fe9934124ec24be"
+                    src="https://ksr-ugc.imgix.net/assets/038/175/201/78e277ef22b423f4f9235d29660091fa_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659623186&auto=format&frame=1&q=92&s=3822d4ed05556c733ff5f0875226a242"
                     alt=""
                   />
                   <h3>
@@ -369,7 +433,7 @@
                 </div>
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/036/665/709/122041ed4e7d37e267d067d6e2ad6669_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1647364548&auto=format&frame=1&q=92&s=b3fa156dbba450767dfd87d2da2101e8"
+                    src="https://ksr-ugc.imgix.net/assets/038/247/027/7b3ebc36670d1f90ebc33e906c500457_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660237234&auto=format&frame=1&q=92&s=31d7027aa97aafd865fccd7486570f48"
                     alt=""
                   />
                   <h3>Behind the Smile Documentary.</h3>
@@ -383,57 +447,13 @@
               </div>
             </div>
 
-            <div class="m">
-              <div class="explore-list">
-                <div class="explore-slide">
-                  <img
-                    src="https://ksr-ugc.imgix.net/assets/038/294/590/09ad09509b996f0785c0ef53afc4db76_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660660067&auto=format&frame=1&q=92&s=b8a636b8ccdc2dba78858e8894433a9b"
-                    alt=""
-                  />
-                  <h3>Magic: The Gathering Documentary - Igniting the Spark</h3>
-                  <p>
-                    A feature-length documentary exploring Magic's 30-year
-                    history & transformation from a “simple” card game into
-                    pop-culture juggernaut
-                  </p>
-                  <span>By Cavegirl Productions</span>
-                </div>
-                <div class="explore-slide">
-                  <img
-                    src="https://ksr-ugc.imgix.net/assets/037/878/138/0eb997c2c1c0bf9e94bfa5e8e9651f88_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657150208&auto=format&frame=1&q=92&s=82170937ed0c366d4fe9934124ec24be"
-                    alt=""
-                  />
-                  <h3>
-                    STEWART UDALL and the Politics of Beauty: Finishing Funds.
-                  </h3>
-                  <p>
-                    John de Graaf's feature-length documentary on the
-                    inspirational life, achievements, and lasting environmental
-                    impact of Stewart Udall.
-                  </p>
-                  <span>By John de Graaf</span>
-                </div>
-                <div class="explore-slide">
-                  <img
-                    src="https://ksr-ugc.imgix.net/assets/036/665/709/122041ed4e7d37e267d067d6e2ad6669_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1647364548&auto=format&frame=1&q=92&s=b3fa156dbba450767dfd87d2da2101e8"
-                    alt=""
-                  />
-                  <h3>Behind the Smile Documentary.</h3>
-                  <p>
-                    This inspiring and uplifting documentary dives into the
-                    lives of Kathy & Bill Magee, the founders of the charity,
-                    Operation Smile.
-                  </p>
-                  <span>By Lacey Darlene Paulson</span>
-                </div>
-              </div>
-            </div>
+            <!-- Thrillers -->
 
             <div class="m">
               <div class="explore-list">
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/038/294/590/09ad09509b996f0785c0ef53afc4db76_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660660067&auto=format&frame=1&q=92&s=b8a636b8ccdc2dba78858e8894433a9b"
+                    src="https://ksr-ugc.imgix.net/assets/038/273/004/2ff310cbf7b35ddd0cc70c13f3c435d1_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660494217&auto=format&frame=1&q=92&s=85132e2abcba18fe9b0ebb79ccb1cf5e"
                     alt=""
                   />
                   <h3>Magic: The Gathering Documentary - Igniting the Spark</h3>
@@ -446,7 +466,7 @@
                 </div>
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/037/878/138/0eb997c2c1c0bf9e94bfa5e8e9651f88_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657150208&auto=format&frame=1&q=92&s=82170937ed0c366d4fe9934124ec24be"
+                    src="https://ksr-ugc.imgix.net/assets/038/211/137/596ffd2ae6c504e39fc1cec4307c3309_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659973881&auto=format&frame=1&q=92&s=a41de0fd1caf40399afc05cef28693b7"
                     alt=""
                   />
                   <h3>
@@ -461,7 +481,7 @@
                 </div>
                 <div class="explore-slide">
                   <img
-                    src="https://ksr-ugc.imgix.net/assets/036/665/709/122041ed4e7d37e267d067d6e2ad6669_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1647364548&auto=format&frame=1&q=92&s=b3fa156dbba450767dfd87d2da2101e8"
+                    src="https://ksr-ugc.imgix.net/assets/037/916/266/31a36465fb7974f7f8ee04363cef68c0_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657508459&auto=format&frame=1&q=92&s=896ffecdc618ea0b6c3e75efa5ff461d"
                     alt=""
                   />
                   <h3>Behind the Smile Documentary.</h3>
@@ -483,12 +503,12 @@
       <div class="short-heading">
         <div>
           <span class="small-heading">FRESH FAVORITES</span>
-          <a href="#" class="small-links">Discover more ></a>
+          <a href="#" class="small-links">Discover more <i class="fa-solid fa-angle-right"></i></a>
         </div>
 
         <div>
-          <button class="pre2"><</button>
-          <button class="next2">></button>
+          <button class="pre2"><i class="fa-solid fa-angle-left"></i></button>
+          <button class="next2"><i class="fa-solid fa-angle-right"></i></button>
         </div>
       </div>
 
@@ -501,12 +521,12 @@
       <div class="short-heading">
         <div>
           <span class="small-heading">TAKING OFF</span>
-          <a href="#" class="small-links">Discover more ></a>
+          <a href="#" class="small-links">Discover more <i class="fa-solid fa-angle-right"></i></a>
         </div>
 
         <div>
-          <button class="pre3"><</button>
-          <button class="next3">></button>
+          <button class="pre3"><i class="fa-solid fa-angle-left"></i></button>
+          <button class="next3"><i class="fa-solid fa-angle-right"></i></button>
         </div>
       </div>
 
@@ -579,12 +599,12 @@
         <div class="short-heading">
           <div>
             <span class="small-heading">ANIMATION</span>
-            <a href="#" class="small-links">Discover more ></a>
+            <a href="#" class="small-links">Discover more <i class="fa-solid fa-angle-right"></i></a>
           </div>
   
           <div>
-            <button class="pre4"><</button>
-            <button class="next4">></button>
+            <button class="pre4"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="next4"><i class="fa-solid fa-angle-right"></i></button>
           </div>
         </div>
   
@@ -598,12 +618,12 @@
         <div class="short-heading">
           <div>
             <span class="small-heading">DOCUMENTARIES</span>
-            <a href="#" class="small-links">Discover more ></a>
+            <a href="#" class="small-links">Discover more <i class="fa-solid fa-angle-right"></i></a>
           </div>
   
           <div>
-            <button class="pre5"><</button>
-            <button class="next5">></button>
+            <button class="pre5"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="next5"><i class="fa-solid fa-angle-right"></i></button>
           </div>
         </div>
   
@@ -820,6 +840,7 @@ The Kickstarter Creator Handbook</h3>
     },
   });
 </script>
+
 
 
 <script src="./film.js"></script>

@@ -576,16 +576,15 @@ let recommendedArr=[{
     percent:"788% funded",
     by:"By Uncanny Pictures"
     },
-    {img:"https://ksr-ugc.imgix.net/assets/038/294/590/09ad09509b996f0785c0ef53afc4db76_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660660067&auto=format&frame=1&q=92&s=b8a636b8ccdc2dba78858e8894433a9b",
-    title:`Magic: The Gathering Documentary - Igniting the Spark`,
-    percent:"71% funded",
-    by:"By Cavegirl Productions"},
-    {
-        img:"https://ksr-ugc.imgix.net/assets/038/175/201/78e277ef22b423f4f9235d29660091fa_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659623186&auto=format&frame=1&q=92&s=3822d4ed05556c733ff5f0875226a242",
-        title:`BRUTTA FIGURA`,
-        percent:"160% funded",
-        by:"By Giorgio Arcelli Fontana"
-        },]
+    {img:"https://ksr-ugc.imgix.net/assets/038/021/098/fdcf6ecb1b3e3cef68613d5dc28bd190_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658347006&auto=format&frame=1&q=92&s=d17c5399fa46dcbf4ca9838cc8dac130",
+    title:`
+    Silent Dreams: A film from Bhutan`,
+    percent:"102% funded",
+    by:"By Fora Films"},
+    {img:"https://ksr-ugc.imgix.net/assets/037/878/138/0eb997c2c1c0bf9e94bfa5e8e9651f88_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657150208&auto=format&frame=1&q=92&s=82170937ed0c366d4fe9934124ec24be",
+    title:`STEWART UDALL and the Politics of Beauty: Finishing Funds`,
+    percent:"72% funded",
+    by:"By John de Graaf"}]
   
     
   
