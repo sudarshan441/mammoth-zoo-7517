@@ -1,3 +1,14 @@
+import navbar from "./Compotents/navbar.js"
+document.getElementById("navbar").innerHTML=navbar();
+
+
+
+
+
+
+
+
+
 let arr=[{
   img:"https://ksr-ugc.imgix.net/assets/037/765/438/9628f5c41fb64ded577a81579166d01f_original.png?ixlib=rb-4.0.2&w=680&fit=max&v=1656267680&gif-q=50&lossless=true&s=9ec38f973a8d77aaba02dd3222ad26c9",
   title:`Heart and Brain: The Video Game`,
