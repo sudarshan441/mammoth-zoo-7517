@@ -40,6 +40,10 @@ p:hover{
   padding: 12px 0px 0px;
 }
 
+#head-section > a {
+  margin-right: 20px;
+}
+
 
 
 a{
@@ -732,4 +736,3 @@ width: 70px;
 #recommended-social-media>button>img{
  width: 15px;
 }
-
