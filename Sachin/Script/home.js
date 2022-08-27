@@ -100,8 +100,17 @@ let arr=[{
       let button=document.createElement("button");
       button.setAttribute("id","button1")
       button.innerText=i;
+      // button.style.color="black"
+      // button.style. textDecoration = "none";
       button.addEventListener("click",function(){
+        
+        // if(i==1||i==2||i==3){
+        // button.style.color="darkgreen"
+        // button.style. textDecoration = "underline";
+        // }
         appendata(arr,i);
+        
       })
+   
       document.querySelector("#button").append(button);
     }

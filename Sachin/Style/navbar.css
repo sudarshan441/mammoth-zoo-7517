@@ -109,16 +109,16 @@ a{
     margin-top: 22px;
     background-color: aliceblue; */
     /* border: 1px solid black; */
-    height: 25px;
-    width: 26px;
+    height: 12px;
+    width: 12px;
     /* border: 1px solid black; */
     position: relative;
-    bottom: -2px;
-    left: 10px;
+    bottom: -6px;
+    left: 15px;
 }
 
 #login{
-    margin-left: 40px;
+    margin-left: 35px;
 }
 
 
@@ -183,11 +183,4 @@ top: -107px;
     /* top: 168rem;
     left: 20rem;  */
    /* }  */
-
-
-
-
-
-
-  
 
