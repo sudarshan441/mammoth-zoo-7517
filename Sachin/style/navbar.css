@@ -1,6 +1,9 @@
-#navbar{
-    display: flex;
+*{padding: 0%;
+    margin: 0%;
 }
+
+/* Navbar */
+
 #uprnav{
     display: flex;
     border-bottom: 0.05px solid;
@@ -63,10 +66,18 @@ a{
     color: rgb(128, 121, 121);
     text-decoration: none;
 }
-p:hover{
+#dis:hover{
     color: rgb(9, 140, 120);
 }
-
+#search:hover{
+    color: rgb(9, 140, 120);
+}
+#login:hover{
+    color: rgb(9, 140, 120);
+}
+#start:hover{
+    color: rgb(9, 140, 120);
+}
 #dis{
   margin-left: 20px;
     
@@ -88,20 +99,88 @@ p:hover{
 #search{
     margin-left: 420px;
 }
-#search_logo:hover{
+/* #search_logo:hover{
     color: rgb(9, 140, 120);
     background-color: rgb(9, 140, 120);
     border-color: rgb(9, 140, 120);
-}
+} */
 #search_logo{
-    margin-left: 8px;
+    /* margin-left: 8px;
     margin-top: 22px;
-    background-color: aliceblue;
+    background-color: aliceblue; */
     /* border: 1px solid black; */
-    height: 14px;
-    width: 16px;
+    height: 12px;
+    width: 12px;
+    /* border: 1px solid black; */
+    position: relative;
+    bottom: -6px;
+    left: 15px;
 }
 
 #login{
-    margin-left: 20px;
+    margin-left: 35px;
 }
+
+
+
+      
+a,a:hover{
+    text-decoration: none;
+   }
+   .SearchBox{
+    width: 0px;
+      height: 0px;
+    position: relative;
+    width: 0px;
+
+    left: 1200px;
+   }
+   .searchtext{
+  border: 1px solid black;
+    width: 0%;
+    height: 0%;
+    border: 0px;
+    outline: none;
+    /* transition: 0.5s; */
+    font-size: 20px;
+    
+   }
+   .searchbtn{
+    /* border: 1px solid black; */
+    /* background-color: blue; */
+    color: black;
+    height: 10px;
+    width: 10px;
+    right: -35px;
+position: absolute;
+top: -107px;
+
+   }
+ 
+   .SearchBox:hover>.searchtext{
+      width: 90rem;
+      height: 65px;
+      /* border: 1px solid black; */
+      position: relative;
+      right: 1200px;
+      bottom: 125px;
+      padding-left: 50px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      /* box-shadow: 0 2rem --1.5rem rgba(0, 0, 0,0.5); */
+   }
+   
+   /* #bodyi{
+  width: 80rem;
+  height: 25rem;
+  border: 1px solid black;
+   }
+
+  #bodyimg{
+    width: 100rem;
+    height:80rem;
+    transform: rotateY(200deg);
+    position: relative;
+    /* top: 168rem;
+    left: 20rem;  */
+   /* }  */
+
