@@ -10,6 +10,10 @@ body {
   padding: 0 60px;
 }
 
+#head-section>a{
+  margin-right: 20px;
+}
+
 p{
   margin: 0;
   color: #282828;
@@ -38,10 +42,6 @@ p:hover{
   color: #656969;
   margin: 0px 0px 18px;
   padding: 12px 0px 0px;
-}
-
-#head-section > a {
-  margin-right: 20px;
 }
 
 
@@ -103,9 +103,6 @@ cursor: pointer;
 }
 
 
-
-
-
 #recommended-movie {
   padding-left: 3rem;
   text-decoration: none;
@@ -141,7 +138,6 @@ cursor: pointer;
   cursor: pointer;
 
 }
-
 #subscription-section{
   border-bottom: 0.05px solid rgb(227, 223, 223);
   text-align: center;
