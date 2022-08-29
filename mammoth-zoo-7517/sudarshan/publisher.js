@@ -1,5 +1,4 @@
-import navbar from /mammoth-zoo-7517/arts/components/navbar.js
-document.getElementById("navbar").innerHTML=navbar();
+
 
 
 let arr=[{
