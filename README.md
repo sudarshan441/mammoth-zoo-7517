@@ -1,5 +1,5 @@
 # 
-#### About fitify
+#### About KickStarter
 >  Kickstarter is an American public benefit corporation based in Brooklyn, New York, that maintains a global crowdfunding platform focused on creativity. The company's stated mission is to "help bring creative projects to life
 # Deployment link:
 https://symphonious-genie-ba7aaf.netlify.app/
